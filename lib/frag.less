@@ -1,9 +1,92 @@
 /**
  * Frag
  *
- * Frag is a fluid, responsive, friendly, simple grid system for
- * CSS written in LESS. https://github.com/rowanmanning/frag
+ * Frag is a fluid, responsive, friendly, simple grid system
+ * for CSS written in LESS.
+ *
+ * https://github.com/rowanmanning/frag
  *
  * Copyright 2012, Rowan Manning
  * Dual licensed under the MIT or GPL Version 2 licenses.
  */
+
+//==========================================================
+// Frag Config
+
+// Widths – maximum and break-points
+@frag-max-width: 1200px;
+@frag-break-tablet: 1000px;
+@frag-break-mobile: 640px;
+
+// Columns and gutters
+@frag-column-count: 12;
+@frag-gutter-width: 20px;
+
+//==========================================================
+// Utilities
+
+// Clearfix utility for clearing floats
+.frag-clearfix () {
+    zoom: 1;
+
+    &:before, &:after {
+        display: table;
+        content: '';
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Cross-browser box-sizing
+.frag-box-sizing (@box-sizing) {
+    -webkit-box-sizing: @box-sizing; // safari 3.1–5.0
+       -moz-box-sizing: @box-sizing; // firefox 2+
+            box-sizing: @box-sizing; // w3c standard
+}
+
+// Column width calculator
+.frag-colspan (@colspan) {
+    @single-col-width: 100% / @frag-column-count;
+    width: @single-col-width * @colspan;
+    *width: @frag-gutter-width - floor(@single-col-width * @colspan) - @frag-gutter-width;
+}
+
+//==========================================================
+// Grid
+
+// Container
+.grid {
+    .frag-box-sizing(border-box);
+    max-width: @frag-max-width;
+    margin: 0 auto;
+    padding: 0 @frag-gutter-width;
+    overflow: hidden;
+    .frag-clearfix();
+}
+
+// Basic column styling
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8,
+.col-9, .col-10, .col-11, .col-12 {
+    .frag-box-sizing(border-box);
+    float: left;
+    padding: 0 @frag-gutter-width;
+    overflow: hidden;
+}
+
+//==========================================================
+// Columns (Base Grid)
+
+.col-1  { .frag-colspan(1 ); }
+.col-2  { .frag-colspan(2 ); }
+.col-3  { .frag-colspan(3 ); }
+.col-4  { .frag-colspan(4 ); }
+.col-5  { .frag-colspan(5 ); }
+.col-6  { .frag-colspan(6 ); }
+.col-7  { .frag-colspan(7 ); }
+.col-8  { .frag-colspan(8 ); }
+.col-9  { .frag-colspan(9 ); }
+.col-10 { .frag-colspan(10); }
+.col-11 { .frag-colspan(11); }
+.col-12 { .frag-colspan(12); }
+
