@@ -13,9 +13,11 @@
 //==========================================================
 // Frag Config
 
-// Widths – maximum and break-points
+// Maximum widths
 @frag-max-width: 1200px;
 @frag-ie7-width: 960px;
+
+// Break-points
 @frag-break-tablet: 1000px;
 @frag-break-mobile: 640px;
 
@@ -67,8 +69,8 @@
 }
 
 // Basic column styling
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8,
-.col-9, .col-10, .col-11, .col-12 {
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7,
+.col-8, .col-9, .col-10, .col-11, .col-12 {
     .frag-box-sizing(border-box);
     float: left;
     padding: 0 @frag-gutter-width;
@@ -90,4 +92,60 @@
 .col-10 { .frag-colspan(10); }
 .col-11 { .frag-colspan(11); }
 .col-12 { .frag-colspan(12); }
+
+//==========================================================
+// Columns (Tablet)
+
+@media (max-width: @frag-break-tablet) {
+
+    // Reset unused base columns
+    .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10,
+    .col-11, .col-12 { .frag-colspan(12); }
+
+    // Double the width of smaller columns by default
+    .col-1 { .frag-colspan(2 ); }
+    .col-2 { .frag-colspan(4 ); }
+    .col-3 { .frag-colspan(6 ); }
+
+    // Tablet-specific columns
+    .col-tablet-1  { .frag-colspan(1 ); }
+    .col-tablet-2  { .frag-colspan(2 ); }
+    .col-tablet-3  { .frag-colspan(3 ); }
+    .col-tablet-4  { .frag-colspan(4 ); }
+    .col-tablet-5  { .frag-colspan(5 ); }
+    .col-tablet-6  { .frag-colspan(6 ); }
+    .col-tablet-7  { .frag-colspan(7 ); }
+    .col-tablet-8  { .frag-colspan(8 ); }
+    .col-tablet-9  { .frag-colspan(9 ); }
+    .col-tablet-10 { .frag-colspan(10); }
+    .col-tablet-11 { .frag-colspan(11); }
+    .col-tablet-12 { .frag-colspan(12); }
+
+}
+
+//==========================================================
+// Columns (Mobile)
+
+@media (max-width: @frag-break-mobile) {
+
+    // Reset unused base columns
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7,
+    .col-8, .col-9, .col-10, .col-11,
+    .col-12 { .frag-colspan(12); }
+
+    // Mobile-specific columns
+    .col-mobile-1  { .frag-colspan(1 ); }
+    .col-mobile-2  { .frag-colspan(2 ); }
+    .col-mobile-3  { .frag-colspan(3 ); }
+    .col-mobile-4  { .frag-colspan(4 ); }
+    .col-mobile-5  { .frag-colspan(5 ); }
+    .col-mobile-6  { .frag-colspan(6 ); }
+    .col-mobile-7  { .frag-colspan(7 ); }
+    .col-mobile-8  { .frag-colspan(8 ); }
+    .col-mobile-9  { .frag-colspan(9 ); }
+    .col-mobile-10 { .frag-colspan(10); }
+    .col-mobile-11 { .frag-colspan(11); }
+    .col-mobile-12 { .frag-colspan(12); }
+
+}
 
