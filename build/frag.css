@@ -1,0 +1,96 @@
+/**
+ * Frag
+ *
+ * Frag is a fluid, responsive, friendly, simple grid system
+ * for CSS written in LESS.
+ *
+ * https://github.com/rowanmanning/frag
+ *
+ * Copyright 2012, Rowan Manning
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ */
+.grid {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+  zoom: 1;
+}
+.grid:before,
+.grid:after {
+  display: table;
+  content: '';
+}
+.grid:after {
+  clear: both;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.col-1 {
+  width: 8.333333333333334%;
+  *width: 0px;
+}
+.col-2 {
+  width: 16.666666666666668%;
+  *width: 0px;
+}
+.col-3 {
+  width: 25%;
+  *width: 0px;
+}
+.col-4 {
+  width: 33.333333333333336%;
+  *width: 0px;
+}
+.col-5 {
+  width: 41.66666666666667%;
+  *width: 0px;
+}
+.col-6 {
+  width: 50%;
+  *width: 0px;
+}
+.col-7 {
+  width: 58.333333333333336%;
+  *width: 0px;
+}
+.col-8 {
+  width: 66.66666666666667%;
+  *width: 0px;
+}
+.col-9 {
+  width: 75%;
+  *width: 0px;
+}
+.col-10 {
+  width: 83.33333333333334%;
+  *width: 0px;
+}
+.col-11 {
+  width: 91.66666666666667%;
+  *width: 0px;
+}
+.col-12 {
+  width: 100%;
+  *width: -1px;
+}
