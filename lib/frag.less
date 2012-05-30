@@ -77,6 +77,9 @@
     overflow: hidden;
 }
 
+// Column clearing
+.col-clear { clear: left; }
+
 //==========================================================
 // Columns (Base Grid)
 
@@ -101,6 +104,7 @@
     // Reset unused base columns
     .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10,
     .col-11, .col-12 { .frag-colspan(12); }
+    .col-clear { clear: none; }
 
     // Double the width of smaller columns by default
     .col-1 { .frag-colspan(2 ); }
@@ -120,6 +124,7 @@
     .col-tablet-10 { .frag-colspan(10); }
     .col-tablet-11 { .frag-colspan(11); }
     .col-tablet-12 { .frag-colspan(12); }
+    .col-tablet-clear { clear: left; }
 
 }
 
@@ -132,6 +137,7 @@
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7,
     .col-8, .col-9, .col-10, .col-11,
     .col-12 { .frag-colspan(12); }
+    .col-clear { clear: none; }
 
     // Mobile-specific columns
     .col-mobile-1  { .frag-colspan(1 ); }
@@ -146,6 +152,6 @@
     .col-mobile-10 { .frag-colspan(10); }
     .col-mobile-11 { .frag-colspan(11); }
     .col-mobile-12 { .frag-colspan(12); }
+    .col-mobile-clear { clear: left; }
 
 }
-
