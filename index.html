@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Frag : Frag is a fluid, responsive, friendly, simple grid system for CSS written in LESS." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Frag</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/rowanmanning/frag">View on GitHub</a>
+
+          <h1 id="project_title">Frag</h1>
+          <h2 id="project_tagline">Frag is a fluid, responsive, friendly, simple grid system for CSS written in LESS.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/rowanmanning/frag/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/rowanmanning/frag/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Frag (beta)</h1>
+
+<p>Frag is a fluid, responsive, friendly, simple grid system for
+CSS written in LESS.</p>
+
+<h2>Using Frag</h2>
+
+<p>You can use frag in the same way you would use any third-party
+CSS, by including it with your code. If you already use LESS for
+your project or site then you can <code>@import</code> <code>lib/frag.less</code>
+directly. This allows you to customize the grid spacing and
+break-points.</p>
+
+<p>Using the grid system is just a case of adding classes to your
+markup. The best way to learn this is by studying
+<code>test/frag.html</code>. This file uses all of the features of frag.</p>
+
+<h3>Grid</h3>
+
+<p>All frag columns must be surrounded by an element with a class of
+<code>grid</code>:</p>
+
+<pre><code>&lt;div class="grid"&gt;&lt;!-- columns --&gt;&lt;/div&gt;
+</code></pre>
+
+<h3>Columns</h3>
+
+<p>To create columns, simple add classes of <code>col-&lt;n&gt;</code> to your
+elements, where <code>&lt;n&gt;</code> is the number of columns (up to 12) that
+you wish the element to span.</p>
+
+<pre><code>&lt;div class="grid"&gt;
+    &lt;div class="col-6"&gt;&lt;!-- content --&gt;&lt;/div&gt;
+    &lt;div class="col-6"&gt;&lt;!-- content --&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Clearing</h3>
+
+<p>When a grid spans multiple rows, you'll need to clear columns in
+order to prevent strange display issues. You need to add a class
+of <code>col-clear</code> to the first element in each row (ignoring the
+first row as it has nothing to clear).</p>
+
+<pre><code>&lt;div class="grid"&gt;
+    &lt;div class="col-6"&gt;&lt;!-- content --&gt;&lt;/div&gt;
+    &lt;div class="col-6"&gt;&lt;!-- content --&gt;&lt;/div&gt;
+    &lt;div class="col-6 col-clear"&gt;&lt;!-- content --&gt;&lt;/div&gt;
+    &lt;div class="col-6"&gt;&lt;!-- content --&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Going Responsive</h3>
+
+<p>Frag supports multiple break-points, and you are able to specify
+column widths for tablet and mobile. To do this, supplement your
+regular <code>col-&lt;n&gt;</code> class with <code>col-&lt;break&gt;-&lt;n&gt;</code> where <code>&lt;break&gt;</code> is
+either "tablet" or "mobile". The example below will make all
+columns display at full width on mobile.</p>
+
+<pre><code>&lt;div class="grid"&gt;
+    &lt;div class="col-6 col-mobile-12"&gt;&lt;!-- content --&gt;&lt;/div&gt;
+    &lt;div class="col-6 col-mobile-12"&gt;&lt;!-- content --&gt;&lt;/div&gt;
+    &lt;div class="col-6 col-mobile-12 col-clear"&gt;&lt;!-- content --&gt;&lt;/div&gt;
+    &lt;div class="col-6 col-mobile-12"&gt;&lt;!-- content --&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>The mobile and tablet break-points also have their own clear
+classes – <code>col-tablet-clear</code> and <code>col-mobile-clear</code>. These allow
+you to use very different layouts for different devices.</p>
+
+<p>The tablet and mobile break-points make some changes to the base
+grid without you having to specify anything. The tablet
+break-point doubles the width of <code>col-&lt;1–3&gt;</code>, and sets all other
+column sizes to 12. The mobule break-point sets everything to 12
+by default.</p>
+
+<h2>Building Frag</h2>
+
+<p>In order to compile the Frag LESS source into CSS, you'll need to
+install the Node.js, npm and the LESS command line utility if you
+haven't already:</p>
+
+<pre><code>npm install -g less
+</code></pre>
+
+<p>Then you can run the following from within the project directory
+to compile the CSS:</p>
+
+<pre><code>lessc lib/frag.less &gt; build/frag.css
+</code></pre>
+
+<h2>License</h2>
+
+<p>Copyright 2012, Rowan Manning<br>
+Dual licensed under the <a href="http://opensource.org/licenses/mit-license.php">MIT</a> or <a href="http://opensource.org/licenses/gpl-2.0.php">GPL Version 2</a>
+licenses.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Frag maintained by <a href="https://github.com/rowanmanning">rowanmanning</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
