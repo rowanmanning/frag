@@ -15,6 +15,7 @@
 
 // Widths – maximum and break-points
 @frag-max-width: 1200px;
+@frag-ie7-width: 960px;
 @frag-break-tablet: 1000px;
 @frag-break-mobile: 640px;
 
@@ -47,9 +48,8 @@
 
 // Column width calculator
 .frag-colspan (@colspan) {
-    @single-col-width: 100% / @frag-column-count;
-    width: @single-col-width * @colspan;
-    *width: @frag-gutter-width - floor(@single-col-width * @colspan) - @frag-gutter-width;
+    width: (100% / @frag-column-count) * @colspan;
+    *width: floor((@frag-ie7-width / @frag-column-count) * @colspan) - (@frag-gutter-width * 2); // IE7
 }
 
 //==========================================================
@@ -59,6 +59,7 @@
 .grid {
     .frag-box-sizing(border-box);
     max-width: @frag-max-width;
+    *width: @frag-ie7-width; // IE7
     margin: 0 auto;
     padding: 0 @frag-gutter-width;
     overflow: hidden;

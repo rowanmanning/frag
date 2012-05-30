@@ -14,6 +14,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 1200px;
+  *width: 960px;
   margin: 0 auto;
   padding: 0 20px;
   overflow: hidden;
@@ -48,49 +49,49 @@
 }
 .col-1 {
   width: 8.333333333333334%;
-  *width: 0px;
+  *width: 40px;
 }
 .col-2 {
   width: 16.666666666666668%;
-  *width: 0px;
+  *width: 120px;
 }
 .col-3 {
   width: 25%;
-  *width: 0px;
+  *width: 200px;
 }
 .col-4 {
   width: 33.333333333333336%;
-  *width: 0px;
+  *width: 280px;
 }
 .col-5 {
   width: 41.66666666666667%;
-  *width: 0px;
+  *width: 360px;
 }
 .col-6 {
   width: 50%;
-  *width: 0px;
+  *width: 440px;
 }
 .col-7 {
   width: 58.333333333333336%;
-  *width: 0px;
+  *width: 520px;
 }
 .col-8 {
   width: 66.66666666666667%;
-  *width: 0px;
+  *width: 600px;
 }
 .col-9 {
   width: 75%;
-  *width: 0px;
+  *width: 680px;
 }
 .col-10 {
   width: 83.33333333333334%;
-  *width: 0px;
+  *width: 760px;
 }
 .col-11 {
   width: 91.66666666666667%;
-  *width: 0px;
+  *width: 840px;
 }
 .col-12 {
   width: 100%;
-  *width: -1px;
+  *width: 920px;
 }
