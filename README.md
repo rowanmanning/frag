@@ -6,6 +6,16 @@ Frag is a fluid, responsive, friendly, simple grid system for
 CSS written in LESS.
 
 
+Browser Support
+---------------
+
+Frag has been tested so far in Firefox 12, Chrome, Safari 5.1,
+Internet Explorer 6–9, Mobile Safari (iPhone and iPad).
+
+Internet Explorer 6 and 7 don't support unequal column widths
+just yet, but I'm working on it!
+
+
 Using Frag
 ----------
 
