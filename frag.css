@@ -1,0 +1,251 @@
+/**
+ * Frag
+ *
+ * Frag is a fluid, responsive, friendly, simple grid system
+ * for CSS written in LESS.
+ *
+ * https://github.com/rowanmanning/frag
+ *
+ * Copyright 2012, Rowan Manning
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ */
+.grid {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 1200px;
+  *width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+  zoom: 1;
+}
+.grid:before,
+.grid:after {
+  display: table;
+  content: '';
+}
+.grid:after {
+  clear: both;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.col-clear {
+  clear: left;
+}
+.col-1 {
+  width: 8.333333333333334%;
+  *width: 40px;
+}
+.col-2 {
+  width: 16.666666666666668%;
+  *width: 120px;
+}
+.col-3 {
+  width: 25%;
+  *width: 200px;
+}
+.col-4 {
+  width: 33.333333333333336%;
+  *width: 280px;
+}
+.col-5 {
+  width: 41.66666666666667%;
+  *width: 360px;
+}
+.col-6 {
+  width: 50%;
+  *width: 440px;
+}
+.col-7 {
+  width: 58.333333333333336%;
+  *width: 520px;
+}
+.col-8 {
+  width: 66.66666666666667%;
+  *width: 600px;
+}
+.col-9 {
+  width: 75%;
+  *width: 680px;
+}
+.col-10 {
+  width: 83.33333333333334%;
+  *width: 760px;
+}
+.col-11 {
+  width: 91.66666666666667%;
+  *width: 840px;
+}
+.col-12 {
+  width: 100%;
+  *width: 920px;
+}
+@media (max-width: 1000px) {
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 100%;
+    *width: 920px;
+  }
+  .col-clear {
+    clear: none;
+  }
+  .col-1 {
+    width: 16.666666666666668%;
+    *width: 120px;
+  }
+  .col-2 {
+    width: 33.333333333333336%;
+    *width: 280px;
+  }
+  .col-3 {
+    width: 50%;
+    *width: 440px;
+  }
+  .col-tablet-1 {
+    width: 8.333333333333334%;
+    *width: 40px;
+  }
+  .col-tablet-2 {
+    width: 16.666666666666668%;
+    *width: 120px;
+  }
+  .col-tablet-3 {
+    width: 25%;
+    *width: 200px;
+  }
+  .col-tablet-4 {
+    width: 33.333333333333336%;
+    *width: 280px;
+  }
+  .col-tablet-5 {
+    width: 41.66666666666667%;
+    *width: 360px;
+  }
+  .col-tablet-6 {
+    width: 50%;
+    *width: 440px;
+  }
+  .col-tablet-7 {
+    width: 58.333333333333336%;
+    *width: 520px;
+  }
+  .col-tablet-8 {
+    width: 66.66666666666667%;
+    *width: 600px;
+  }
+  .col-tablet-9 {
+    width: 75%;
+    *width: 680px;
+  }
+  .col-tablet-10 {
+    width: 83.33333333333334%;
+    *width: 760px;
+  }
+  .col-tablet-11 {
+    width: 91.66666666666667%;
+    *width: 840px;
+  }
+  .col-tablet-12 {
+    width: 100%;
+    *width: 920px;
+  }
+  .col-tablet-clear {
+    clear: left;
+  }
+}
+@media (max-width: 640px) {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 100%;
+    *width: 920px;
+  }
+  .col-clear {
+    clear: none;
+  }
+  .col-mobile-1 {
+    width: 8.333333333333334%;
+    *width: 40px;
+  }
+  .col-mobile-2 {
+    width: 16.666666666666668%;
+    *width: 120px;
+  }
+  .col-mobile-3 {
+    width: 25%;
+    *width: 200px;
+  }
+  .col-mobile-4 {
+    width: 33.333333333333336%;
+    *width: 280px;
+  }
+  .col-mobile-5 {
+    width: 41.66666666666667%;
+    *width: 360px;
+  }
+  .col-mobile-6 {
+    width: 50%;
+    *width: 440px;
+  }
+  .col-mobile-7 {
+    width: 58.333333333333336%;
+    *width: 520px;
+  }
+  .col-mobile-8 {
+    width: 66.66666666666667%;
+    *width: 600px;
+  }
+  .col-mobile-9 {
+    width: 75%;
+    *width: 680px;
+  }
+  .col-mobile-10 {
+    width: 83.33333333333334%;
+    *width: 760px;
+  }
+  .col-mobile-11 {
+    width: 91.66666666666667%;
+    *width: 840px;
+  }
+  .col-mobile-12 {
+    width: 100%;
+    *width: 920px;
+  }
+  .col-mobile-clear {
+    clear: left;
+  }
+}
