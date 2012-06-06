@@ -77,7 +77,16 @@
 }
 
 // Column clearing
-.col-clear { clear: left; }
+.col-clear {
+    clear: left;
+}
+
+// IE 6+7-specific column clearing
+.ie-clear {
+    display: none;
+    *display: block;
+    *clear: both;
+}
 
 //==========================================================
 // Columns (Base Grid)
