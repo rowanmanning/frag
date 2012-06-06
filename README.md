@@ -12,9 +12,6 @@ Browser Support
 Frag has been tested so far in Firefox 12, Chrome, Safari 5.1,
 Internet Explorer 6–9, Mobile Safari (iPhone and iPad).
 
-Internet Explorer 6 and 7 don't support unequal column widths
-just yet, but I'm working on it!
-
 
 Using Frag
 ----------
@@ -57,6 +54,19 @@ first row as it has nothing to clear).
     <div class="grid">
         <div class="col-6"><!-- content --></div>
         <div class="col-6"><!-- content --></div>
+        <div class="col-6 col-clear"><!-- content --></div>
+        <div class="col-6"><!-- content --></div>
+    </div>
+
+If you're one of the unlucky ones who need to support Internet
+Explorer 6 and/or 7, then you need to add some extra markup to
+prevent inequal column heights from breaking the layout. It
+sucks, I know.
+
+    <div class="grid">
+        <div class="col-6"><!-- content --></div>
+        <div class="col-6"><!-- content --></div>
+        <br class="ie-clear"/>
         <div class="col-6 col-clear"><!-- content --></div>
         <div class="col-6"><!-- content --></div>
     </div>
