@@ -103,9 +103,7 @@
   *width: 920px;
 }
 @media (max-width: 1000px) {
-  .col-4,
   .col-5,
-  .col-6,
   .col-7,
   .col-8,
   .col-9,
