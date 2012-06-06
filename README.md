@@ -31,7 +31,7 @@ markup. The best way to learn this is by studying
 All frag columns must be surrounded by an element with a class of
 `grid`:
 
-    <div class="grid"><!-- columns --></div>
+    <div class="grid"> <!-- columns --> </div>
 
 ### Columns ###
 
@@ -40,8 +40,8 @@ elements, where `<n>` is the number of columns (up to 12) that
 you wish the element to span.
 
     <div class="grid">
-        <div class="col-6"><!-- content --></div>
-        <div class="col-6"><!-- content --></div>
+        <div class="col-6"> <!-- content --> </div>
+        <div class="col-6"> <!-- content --> </div>
     </div>
 
 ### Clearing ###
@@ -52,10 +52,10 @@ of `col-clear` to the first element in each row (ignoring the
 first row as it has nothing to clear).
 
     <div class="grid">
-        <div class="col-6"><!-- content --></div>
-        <div class="col-6"><!-- content --></div>
-        <div class="col-6 col-clear"><!-- content --></div>
-        <div class="col-6"><!-- content --></div>
+        <div class="col-6">           <!-- content --> </div>
+        <div class="col-6">           <!-- content --> </div>
+        <div class="col-6 col-clear"> <!-- content --> </div>
+        <div class="col-6">           <!-- content --> </div>
     </div>
 
 If you're one of the unlucky ones who need to support Internet
@@ -64,11 +64,11 @@ prevent inequal column heights from breaking the layout. It
 sucks, I know.
 
     <div class="grid">
-        <div class="col-6"><!-- content --></div>
-        <div class="col-6"><!-- content --></div>
+        <div class="col-6">           <!-- content --> </div>
+        <div class="col-6">           <!-- content --> </div>
         <br class="ie-clear"/>
-        <div class="col-6 col-clear"><!-- content --></div>
-        <div class="col-6"><!-- content --></div>
+        <div class="col-6 col-clear"> <!-- content --> </div>
+        <div class="col-6">           <!-- content --> </div>
     </div>
 
 ### Going Responsive ###
@@ -80,10 +80,10 @@ either "tablet" or "mobile". The example below will make all
 columns display at full width on mobile.
 
     <div class="grid">
-        <div class="col-6 col-mobile-12"><!-- content --></div>
-        <div class="col-6 col-mobile-12"><!-- content --></div>
-        <div class="col-6 col-mobile-12 col-clear"><!-- content --></div>
-        <div class="col-6 col-mobile-12"><!-- content --></div>
+        <div class="col-6 col-mobile-12">           <!-- content --> </div>
+        <div class="col-6 col-mobile-12">           <!-- content --> </div>
+        <div class="col-6 col-mobile-12 col-clear"> <!-- content --> </div>
+        <div class="col-6 col-mobile-12">           <!-- content --> </div>
     </div>
 
 The mobile and tablet break-points also have their own clear
