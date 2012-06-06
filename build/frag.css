@@ -49,6 +49,11 @@
 .col-clear {
   clear: left;
 }
+.ie-clear {
+  display: none;
+  *display: block;
+  *clear: both;
+}
 .col-1 {
   width: 8.333333333333334%;
   *width: 40px;
