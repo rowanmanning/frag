@@ -31,7 +31,11 @@
         .grid {
             margin: 20px auto;
         }
-        .grid div {
+        .grid .grid {
+            margin: 0;
+        }
+        .grid .col-1, .grid .col-2, .grid .col-3, .grid .col-4, .grid .col-5, .grid .col-6,
+        .grid .col-7, .grid .col-8, .grid .col-9, .grid .col-10, .grid .col-11, .grid .col-12 {
             padding-top: 20px;
             padding-bottom: 20px;
             background-color: #eee;
@@ -139,6 +143,31 @@
         <div class="col-3 alt">Column<br/>&hellip;<br/>&hellip;</div>
         <div class="col-3 col-tablet-clear">Column<br/>&hellip;</div>
         <div class="col-3 alt">Column<br/>&hellip;<br/>&hellip;<br/>&hellip;<br/>&hellip;</div>
+    </div>
+
+    <h2>Nested Grids</h2>
+
+    <div class="grid">
+        <div class="col-6">
+            Six<br/><br/>
+            <div class="grid">
+                <div class="col-12 alt">
+                    Twelve<br/><br/>
+                    <div class="grid">
+                        <div class="col-4">Four</div>
+                        <div class="col-4">Four</div>
+                        <div class="col-4">Four</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 alt">
+            Six<br/><br/>
+            <div class="grid">
+                <div class="col-6">Six</div>
+                <div class="col-6">Six</div>
+            </div>
+        </div>
     </div>
 
 </body>

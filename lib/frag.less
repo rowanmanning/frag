@@ -62,9 +62,15 @@
     .frag-box-sizing(border-box);
     max-width: @frag-max-width;
     *width: @frag-ie7-width; // IE7
-    padding: 0 @frag-gutter-width;
+    padding-left: @frag-gutter-width;
+    padding-right: @frag-gutter-width;
     overflow: hidden;
     .frag-clearfix();
+
+    .grid {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 // Basic column styling
