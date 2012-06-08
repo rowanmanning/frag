@@ -51,7 +51,12 @@
 // Column width calculator
 .frag-colspan (@colspan) {
     width: (100% / @frag-column-count) * @colspan;
-    *width: floor((@frag-ie7-width / @frag-column-count) * @colspan) - (@frag-gutter-width * 2); // IE7
+
+    // IE6+7 junk
+    @double-gutter-width: (@frag-gutter-width * 2);
+    @ie7-width-minus-gutter: (@frag-ie7-width - @double-gutter-width);
+    @ie7-single-column-width: floor(@ie7-width-minus-gutter / @frag-column-count);
+    *width: ((@ie7-single-column-width * @colspan) - @double-gutter-width);
 }
 
 //==========================================================
