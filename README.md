@@ -96,6 +96,29 @@ break-point doubles the width of `col-<1–3>`, and sets all other
 column sizes to 12. The mobule break-point sets everything to 12
 by default.
 
+### Nesting ###
+
+If you need to nest grids (you probably will) then that's fine,
+it works exactly as you'd expect it to. The only catch here is
+that nested grids work differently in IE 6+7 – all nested grid
+columns become full-width columns.
+
+Just in case it's not clear, here's the markup:
+
+    <div class="grid">
+        <div class="col-6">
+            <div class="grid">
+                <div class="col-3"> <!-- content --> </div>
+                <div class="col-3"> <!-- content --> </div>
+                <div class="col-3"> <!-- content --> </div>
+                <div class="col-3"> <!-- content --> </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <!-- content -->
+        </div>
+    </div>
+
 
 Building Frag
 -------------
