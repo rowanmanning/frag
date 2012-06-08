@@ -107,6 +107,24 @@
   width: 100%;
   *width: 920px;
 }
+.grid .grid {
+  *width: auto;
+}
+.grid .grid .col-1,
+.grid .grid .col-2,
+.grid .grid .col-3,
+.grid .grid .col-4,
+.grid .grid .col-5,
+.grid .grid .col-6,
+.grid .grid .col-7,
+.grid .grid .col-8,
+.grid .grid .col-9,
+.grid .grid .col-10,
+.grid .grid .col-11,
+.grid .grid .col-12 {
+  *width: auto;
+  *float: none;
+}
 @media (max-width: 1000px) {
   .col-5,
   .col-7,
