@@ -66,7 +66,7 @@
 .grid {
     .frag-box-sizing(border-box);
     max-width: @frag-max-width;
-    *width: @frag-ie7-width; // IE7
+    *width: (@frag-ie7-width - (@frag-gutter-width * 2)); // IE7
     padding-left: @frag-gutter-width;
     padding-right: @frag-gutter-width;
     overflow: hidden;
