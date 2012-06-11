@@ -119,6 +119,37 @@ Just in case it's not clear, here's the markup:
         </div>
     </div>
 
+### Hiding ###
+
+Frag allows you to hide certain columns based on the current
+device. This can be useful if a particular column is not valuable
+for mobile or tablet users, e.g. Advertisements or content that
+would not be useful in a mobile context.
+
+To use this feature, use the `col-hide`, `col-tablet-hide` and
+`col-mobile-hide` classes:
+
+    <div class="grid">
+        <div class="col-12">
+            Visible at all screen sizes
+        </div>
+        <div class="col-12 col-tablet-hide col-mobile-hide">
+            Visible at desktop size only
+        </div>
+        <div class="col-12 col-hide col-mobile-hide">
+            Visible at tablet size only
+        </div>
+        <div class="col-12 col-hide col-tablet-hide">
+            Visible at mobile size only
+        </div>
+        <div class="col-12 col-mobile-hide">
+            Visible at desktop and tablet sizes only
+        </div>
+        <div class="col-12 col-hide">
+            Visible at tablet and mobile sizes only
+        </div>
+    </div>
+
 
 Building Frag
 -------------
