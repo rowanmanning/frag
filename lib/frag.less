@@ -82,6 +82,7 @@
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7,
 .col-8, .col-9, .col-10, .col-11, .col-12 {
     .frag-box-sizing(border-box);
+    display: block;
     float: left;
     padding: 0 @frag-gutter-width;
     overflow: hidden;
@@ -97,6 +98,11 @@
     display: none;
     *display: block;
     *clear: both;
+}
+
+// Column hiding
+.col-hide {
+    display: none;
 }
 
 //==========================================================
@@ -135,6 +141,7 @@
     .col-5, .col-7, .col-8, .col-9, .col-10,
     .col-11, .col-12 { .frag-colspan(12); }
     .col-clear { clear: none; }
+    .col-hide { display: block; }
 
     // Double the width of smaller columns by default
     .col-1 { .frag-colspan(2 ); }
@@ -155,6 +162,7 @@
     .col-tablet-11 { .frag-colspan(11); }
     .col-tablet-12 { .frag-colspan(12); }
     .col-tablet-clear { clear: left; }
+    .col-tablet-hide { display: none; }
 
 }
 
@@ -167,7 +175,8 @@
     .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7,
     .col-8, .col-9, .col-10, .col-11,
     .col-12 { .frag-colspan(12); }
-    .col-clear { clear: none; }
+    .col-clear, .col-tablet-clear { clear: none; }
+    .col-hide, .col-tablet-hide { display: block; }
 
     // Mobile-specific columns
     .col-mobile-1  { .frag-colspan(1 ); }
@@ -183,5 +192,6 @@
     .col-mobile-11 { .frag-colspan(11); }
     .col-mobile-12 { .frag-colspan(12); }
     .col-mobile-clear { clear: left; }
+    .col-mobile-hide { display: none; }
 
 }
