@@ -93,7 +93,7 @@ you to use very different layouts for different devices.
 The tablet and mobile break-points make some changes to the base
 grid without you having to specify anything. The tablet
 break-point doubles the width of `col-<1–3>`, and sets all other
-column sizes to 12. The mobule break-point sets everything to 12
+column sizes to 12. The mobile break-point sets everything to 12
 by default.
 
 ### Nesting ###
@@ -154,9 +154,9 @@ To use this feature, use the `col-hide`, `col-tablet-hide` and
 Building Frag
 -------------
 
-In order to compile the Frag LESS source into CSS, you'll need to
-install the Node.js, npm and the LESS command line utility if you
-haven't already:
+In order to compile the Frag LESS source into CSS you'll need to
+install [Node.js][node], [npm][npm] and the LESS command line
+utility:
 
     npm install -g less
 
@@ -174,6 +174,7 @@ Dual licensed under the [MIT][mit] or [GPL Version 2][gpl2]
 licenses.
 
 
+[node]: http://nodejs.org/
+[npm]: http://npmjs.org/
 [gpl2]: http://opensource.org/licenses/gpl-2.0.php
-[less-install]: http://ererer/
 [mit]: http://opensource.org/licenses/mit-license.php
