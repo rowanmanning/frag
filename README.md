@@ -1,6 +1,6 @@
 
-Frag (beta)
-===========
+Frag
+====
 
 Frag is a fluid, responsive, friendly, simple grid system for
 CSS written in LESS.
