@@ -84,7 +84,8 @@
     .frag-box-sizing(border-box);
     display: block;
     float: left;
-    padding: 0 @frag-gutter-width;
+    padding-left: @frag-gutter-width;
+    padding-right: @frag-gutter-width;
     overflow: hidden;
 }
 
@@ -103,6 +104,12 @@
 // Column hiding
 .col-hide {
     display: none;
+}
+
+// Column gutter removal
+.col-gutterless {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 //==========================================================
