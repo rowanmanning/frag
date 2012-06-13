@@ -119,6 +119,24 @@ Just in case it's not clear, here's the markup:
         </div>
     </div>
 
+Columns which contain nested grids will retain their gutter by
+default. It's possible to remove the gutter on a column by using the `col-gutterless` class:
+
+    <div class="grid">
+        <div class="col-6 col-gutterless">
+            <div class="grid">
+                <div class="col-6"> <!-- content --> </div>
+                <div class="col-6"> <!-- content --> </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <!-- content -->
+        </div>
+    </div>
+
+Gutter removal will not work in Internet Explorer 6 and 7; these
+browsers gracefully fall back to columns with gutters.
+
 ### Hiding ###
 
 Frag allows you to hide certain columns based on the current
