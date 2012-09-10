@@ -13,14 +13,22 @@ Frag has been tested so far in Firefox 12, Chrome, Safari 5.1,
 Internet Explorer 6–9, Mobile Safari (iPhone and iPad).
 
 
-Using Frag
+Installing
 ----------
 
-You can use frag in the same way you would use any third-party
-CSS, by including it with your code. If you already use LESS for
-your project or site then you can `@import` `lib/frag.less`
-directly. This allows you to customize the grid spacing and
-break-points.
+You can use Frag in your project by installing it through
+[Bower][bower] with `bower install frag` (or by adding it as a
+project dependency).
+
+You can also use frag without a package manager just by
+including `build/frag.css` in your code. If you already use
+LESS for your project or site then you can `@import`
+`lib/frag.less` directly. This allows you to customize the grid
+spacing and break-points.
+
+
+Using Frag
+----------
 
 Using the grid system is just a case of adding classes to your
 markup. The best way to learn this is by studying
@@ -192,6 +200,7 @@ Dual licensed under the [MIT][mit] or [GPL Version 2][gpl2]
 licenses.
 
 
+[bower]: http://twitter.github.com/bower/
 [node]: http://nodejs.org/
 [npm]: http://npmjs.org/
 [gpl2]: http://opensource.org/licenses/gpl-2.0.php
