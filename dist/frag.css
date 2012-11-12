@@ -2,7 +2,7 @@
  * Frag v2.0.0
  *
  * Frag is a fluid, responsive, friendly, simple grid system
- * for CSS written in Sass.
+ * for CSS written in LESS + Sass.
  *
  * https://github.com/rowanmanning/frag
  *
@@ -36,8 +36,7 @@
   display: block;
   float: left;
   padding-left: 20px;
-  padding-right: 20px;
-  overflow: hidden; }
+  padding-right: 20px; }
 
 .col-clear {
   clear: left; }
