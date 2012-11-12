@@ -159,25 +159,14 @@ If you're importing `lib/frag.sass` directly, then you are able to override many
 Building Frag
 -------------
 
-### LESS
+In order to build CSS from the Frag LESS/Sass source files, you'll need to install [Node.js][node], [npm][npm] and the [Sass command line utility][sass].
 
-In order to compile the Frag LESS source into CSS you'll need to install [Node.js][node], [npm][npm] and the LESS command line utility:
+Once you have these, install npm dependencies by running `npm install` inside the project directory. Now you'll be able to run the following tasks:
 
-    npm install -g less
-
-Then you can run the following from within the project directory to compile the CSS:
-
-    lessc lib/frag.less > dist/frag.css
-
-### Sass
-
-In order to compile the Frag Sass source into CSS you'll need to install the [Sass command line utility][sass]:
-
-    gem install sass
-
-Then you can run the following from within the project directory to compile the CSS:
-
-    sass lib/frag.sass dist/frag.css
+  * `jake compile:sass`  
+    Compile CSS from the Sass source files.
+  * `jake compile:less`  
+    Compile CSS from the LESS source files.
 
 
 License

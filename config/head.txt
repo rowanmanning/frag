@@ -1,0 +1,12 @@
+/**
+ * Frag {{version}}
+ *
+ * {{description}}
+ *
+ * {{homepage}}
+ *
+ * Copyright {{year}}, {{author.name}}
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ */
+
+ 

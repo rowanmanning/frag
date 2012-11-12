@@ -3,7 +3,7 @@
     "version": "2.0.0",
     "description": "Frag is a fluid, responsive, friendly, simple grid system for CSS written in LESS and Sass.",
 
-    "homepage": "https://github.com/rowanmanning/frag",
+    "homepage": "http://frag.rowanmanning.co.uk/",
     "repository": {
         "type": "git",
         "url": "https://github.com/rowanmanning/frag.git"
