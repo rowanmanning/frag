@@ -1,0 +1,184 @@
+/**
+ * Frag v2.0.0
+ *
+ * Frag is a fluid, responsive, friendly, simple grid system
+ * for CSS written in Sass.
+ *
+ * https://github.com/rowanmanning/frag
+ *
+ * Copyright 2012, Rowan Manning
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ */
+
+//==========================================================
+// Default Config
+
+// Maximum widths
+$frag-max-width: 1200px !default
+$frag-ie7-width: 960px !default
+
+// Break-points
+$frag-break-tablet: 1000px !default
+$frag-break-mobile: 640px !default
+
+// Columns and gutters
+$frag-column-count: 12
+$frag-gutter-width: 20px !default
+
+//==========================================================
+// Utilities
+
+// Clearfix class, extended below
+.frag-clearfix
+  zoom: 1
+
+  &:before, &:after
+    display: table
+    content: ''
+
+  &:after
+    clear: both
+
+// Cross-browser box-sizing
+=frag-box-sizing ($box-sizing)
+  -webkit-box-sizing: $box-sizing // Safari 3.1–5.0
+  -moz-box-sizing: $box-sizing // Firefox 2+
+  box-sizing: $box-sizing // W3C standard
+
+// Column width calculator
+=frag-colspan ($colspan)
+  width: (100% / $frag-column-count) * $colspan
+
+  // IE6+7 junk
+  $double-gutter-width: $frag-gutter-width * 2
+  $ie7-width-minus-gutter: $frag-ie7-width - $double-gutter-width
+  $ie7-single-column-width: floor($ie7-width-minus-gutter / $frag-column-count)
+  *width: ($ie7-single-column-width * $colspan) - $double-gutter-width
+
+// Generate column selector
+$frag-column-selector: ()
+@for $i from 1 through $frag-column-count
+  $frag-column-selector: $frag-column-selector, unquote(".col-#{$i}")
+
+//==========================================================
+// Columns (Base Grid)
+
+// Grid container
+.grid
+  +frag-box-sizing(border-box)
+  max-width: $frag-max-width
+  *width: $frag-ie7-width - ($frag-gutter-width * 2) // IE7
+  padding-left: $frag-gutter-width
+  padding-right: $frag-gutter-width
+  @extend .frag-clearfix
+
+  .grid
+    padding-left: 0
+    padding-right: 0
+
+// Base column styling
+#{$frag-column-selector}
+  +frag-box-sizing(border-box)
+  display: block
+  float: left
+  padding-left: $frag-gutter-width
+  padding-right: $frag-gutter-width
+  overflow: hidden
+
+// Column clearing
+.col-clear
+  clear: left
+
+// IE 6+7-specific column clearing
+.ie-clear
+  display: none
+  *display: block
+  *clear: both
+
+// Column hiding
+.col-hide
+  display: none
+
+// Column gutter removal
+.col-gutterless
+  padding-left: 0
+  padding-right: 0
+
+  // Re-add padding for IE6+7
+  *padding-left: $frag-gutter-width
+  *padding-right: $frag-gutter-width
+
+//==========================================================
+// Columns (Base Grid)
+
+@for $i from 1 through $frag-column-count
+  .col-#{$i}
+    +frag-colspan($i)
+
+// Nested column fix for IE 6+7
+.grid .grid
+  *width: auto
+  
+  #{$frag-column-selector}
+    *width: auto
+    *float: none
+
+//==========================================================
+// Columns (Tablet)
+
+@media (max-width: $frag-break-tablet)
+
+  // Reset unused base columns
+  .col-5, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
+    +frag-colspan(12)
+  .col-clear
+    clear: none
+  .col-hide
+    display: block
+
+  // Double the width of smaller columns by default
+  .col-1
+    +frag-colspan(2)
+  .col-2
+    +frag-colspan(4)
+  .col-3
+    +frag-colspan(6)
+
+  // Tablet-specific columns
+  $i: 0
+  @for $i from 1 through $frag-column-count
+    .col-tablet-#{$i}
+      +frag-colspan($i)
+
+  // Column clearing/hiding
+  .col-tablet-clear
+    clear: left
+  .col-tablet-hide
+    display: none
+
+//==========================================================
+// Columns (Mobile)
+
+@media (max-width: $frag-break-mobile)
+
+  // Reset unused base columns
+  $i: 0
+  @for $i from 1 through $frag-column-count
+    .col-#{$i}
+      +frag-colspan(12)
+  .col-clear, .col-tablet-clear
+    clear: none
+  .col-hide, .col-tablet-hide
+    display: block
+
+  // Mobile-specific columns
+  $i: 0
+  @for $i from 1 through $frag-column-count
+    .col-mobile-#{$i}
+      +frag-colspan($i)
+
+  // Column clearing/hiding
+  .col-mobile-clear
+    clear: left
+  .col-mobile-hide
+    display: none
