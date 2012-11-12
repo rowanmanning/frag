@@ -1,5 +1,5 @@
 /**
- * Frag v1.1.0
+ * Frag v1.1.2
  *
  * Frag is a fluid, responsive, friendly, simple grid system
  * for CSS written in LESS.
@@ -17,7 +17,6 @@
   *width: 920px;
   padding-left: 20px;
   padding-right: 20px;
-  overflow: hidden;
   zoom: 1;
 }
 .grid:before,
@@ -51,7 +50,6 @@
   float: left;
   padding-left: 20px;
   padding-right: 20px;
-  overflow: hidden;
 }
 .col-clear {
   clear: left;
