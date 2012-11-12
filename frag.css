@@ -1,14 +1,22 @@
 /**
- * Frag v1.1.0
+ * Frag 1.2.0
  *
- * Frag is a fluid, responsive, friendly, simple grid system
- * for CSS written in LESS.
+ * Frag is a fluid, responsive, friendly, simple grid system for CSS written in LESS and Sass.
  *
- * https://github.com/rowanmanning/frag
+ * http://frag.rowanmanning.co.uk/
  *
  * Copyright 2012, Rowan Manning
  * Dual licensed under the MIT or GPL Version 2 licenses.
  */
+
+ .frag-clearfix, .grid {
+  zoom: 1; }
+  .frag-clearfix:before, .grid:before, .frag-clearfix:after, .grid:after {
+    display: table;
+    content: ""; }
+  .frag-clearfix:after, .grid:after {
+    clear: both; }
+
 .grid {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -16,286 +24,272 @@
   max-width: 1200px;
   *width: 920px;
   padding-left: 20px;
-  padding-right: 20px;
-  overflow: hidden;
-  zoom: 1;
-}
-.grid:before,
-.grid:after {
-  display: table;
-  content: '';
-}
-.grid:after {
-  clear: both;
-}
-.grid .grid {
-  padding-left: 0;
-  padding-right: 0;
-}
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
+  padding-right: 20px; }
+  .grid .grid {
+    padding-left: 0;
+    padding-right: 0; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   float: left;
   padding-left: 20px;
-  padding-right: 20px;
-  overflow: hidden;
-}
+  padding-right: 20px; }
+
 .col-clear {
-  clear: left;
-}
+  clear: left; }
+
 .ie-clear {
   display: none;
   *display: block;
-  *clear: both;
-}
+  *clear: both; }
+
 .col-hide {
-  display: none;
-}
+  display: none; }
+
 .col-gutterless {
   padding-left: 0;
   padding-right: 0;
   *padding-left: 20px;
-  *padding-right: 20px;
-}
+  *padding-right: 20px; }
+
 .col-1 {
-  width: 8.333333333333334%;
-  *width: 36px;
-}
+  width: 8.33333%;
+  *width: 36px; }
+
 .col-2 {
-  width: 16.666666666666668%;
-  *width: 112px;
-}
+  width: 16.66667%;
+  *width: 112px; }
+
 .col-3 {
   width: 25%;
-  *width: 188px;
-}
+  *width: 188px; }
+
 .col-4 {
-  width: 33.333333333333336%;
-  *width: 264px;
-}
+  width: 33.33333%;
+  *width: 264px; }
+
 .col-5 {
-  width: 41.66666666666667%;
-  *width: 340px;
-}
+  width: 41.66667%;
+  *width: 340px; }
+
 .col-6 {
   width: 50%;
-  *width: 416px;
-}
+  *width: 416px; }
+
 .col-7 {
-  width: 58.333333333333336%;
-  *width: 492px;
-}
+  width: 58.33333%;
+  *width: 492px; }
+
 .col-8 {
-  width: 66.66666666666667%;
-  *width: 568px;
-}
+  width: 66.66667%;
+  *width: 568px; }
+
 .col-9 {
   width: 75%;
-  *width: 644px;
-}
+  *width: 644px; }
+
 .col-10 {
-  width: 83.33333333333334%;
-  *width: 720px;
-}
+  width: 83.33333%;
+  *width: 720px; }
+
 .col-11 {
-  width: 91.66666666666667%;
-  *width: 796px;
-}
+  width: 91.66667%;
+  *width: 796px; }
+
 .col-12 {
   width: 100%;
-  *width: 872px;
-}
+  *width: 872px; }
+
 .grid .grid {
-  *width: auto;
-}
-.grid .grid .col-1,
-.grid .grid .col-2,
-.grid .grid .col-3,
-.grid .grid .col-4,
-.grid .grid .col-5,
-.grid .grid .col-6,
-.grid .grid .col-7,
-.grid .grid .col-8,
-.grid .grid .col-9,
-.grid .grid .col-10,
-.grid .grid .col-11,
-.grid .grid .col-12 {
-  *width: auto;
-  *float: none;
-}
+  *width: auto; }
+  .grid .grid .col-1, .grid .grid .col-2, .grid .grid .col-3, .grid .grid .col-4, .grid .grid .col-5, .grid .grid .col-6, .grid .grid .col-7, .grid .grid .col-8, .grid .grid .col-9, .grid .grid .col-10, .grid .grid .col-11, .grid .grid .col-12 {
+    *width: auto;
+    *float: none; }
+
 @media (max-width: 1000px) {
-  .col-5,
-  .col-7,
-  .col-8,
-  .col-9,
-  .col-10,
-  .col-11,
-  .col-12 {
+  .col-5, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
     width: 100%;
-    *width: 872px;
-  }
+    *width: 872px; }
+
   .col-clear {
-    clear: none;
-  }
+    clear: none; }
+
   .col-hide {
-    display: block;
-  }
+    display: block; }
+
   .col-1 {
-    width: 16.666666666666668%;
-    *width: 112px;
-  }
+    width: 16.66667%;
+    *width: 112px; }
+
   .col-2 {
-    width: 33.333333333333336%;
-    *width: 264px;
-  }
+    width: 33.33333%;
+    *width: 264px; }
+
   .col-3 {
     width: 50%;
-    *width: 416px;
-  }
+    *width: 416px; }
+
   .col-tablet-1 {
-    width: 8.333333333333334%;
-    *width: 36px;
-  }
+    width: 8.33333%;
+    *width: 36px; }
+
   .col-tablet-2 {
-    width: 16.666666666666668%;
-    *width: 112px;
-  }
+    width: 16.66667%;
+    *width: 112px; }
+
   .col-tablet-3 {
     width: 25%;
-    *width: 188px;
-  }
+    *width: 188px; }
+
   .col-tablet-4 {
-    width: 33.333333333333336%;
-    *width: 264px;
-  }
+    width: 33.33333%;
+    *width: 264px; }
+
   .col-tablet-5 {
-    width: 41.66666666666667%;
-    *width: 340px;
-  }
+    width: 41.66667%;
+    *width: 340px; }
+
   .col-tablet-6 {
     width: 50%;
-    *width: 416px;
-  }
+    *width: 416px; }
+
   .col-tablet-7 {
-    width: 58.333333333333336%;
-    *width: 492px;
-  }
+    width: 58.33333%;
+    *width: 492px; }
+
   .col-tablet-8 {
-    width: 66.66666666666667%;
-    *width: 568px;
-  }
+    width: 66.66667%;
+    *width: 568px; }
+
   .col-tablet-9 {
     width: 75%;
-    *width: 644px;
-  }
+    *width: 644px; }
+
   .col-tablet-10 {
-    width: 83.33333333333334%;
-    *width: 720px;
-  }
+    width: 83.33333%;
+    *width: 720px; }
+
   .col-tablet-11 {
-    width: 91.66666666666667%;
-    *width: 796px;
-  }
+    width: 91.66667%;
+    *width: 796px; }
+
   .col-tablet-12 {
     width: 100%;
-    *width: 872px;
-  }
+    *width: 872px; }
+
   .col-tablet-clear {
-    clear: left;
-  }
+    clear: left; }
+
   .col-tablet-hide {
-    display: none;
-  }
-}
+    display: none; } }
 @media (max-width: 640px) {
-  .col-1,
-  .col-2,
-  .col-3,
-  .col-4,
-  .col-5,
-  .col-6,
-  .col-7,
-  .col-8,
-  .col-9,
-  .col-10,
-  .col-11,
+  .col-1 {
+    width: 100%;
+    *width: 872px; }
+
+  .col-2 {
+    width: 100%;
+    *width: 872px; }
+
+  .col-3 {
+    width: 100%;
+    *width: 872px; }
+
+  .col-4 {
+    width: 100%;
+    *width: 872px; }
+
+  .col-5 {
+    width: 100%;
+    *width: 872px; }
+
+  .col-6 {
+    width: 100%;
+    *width: 872px; }
+
+  .col-7 {
+    width: 100%;
+    *width: 872px; }
+
+  .col-8 {
+    width: 100%;
+    *width: 872px; }
+
+  .col-9 {
+    width: 100%;
+    *width: 872px; }
+
+  .col-10 {
+    width: 100%;
+    *width: 872px; }
+
+  .col-11 {
+    width: 100%;
+    *width: 872px; }
+
   .col-12 {
     width: 100%;
-    *width: 872px;
-  }
-  .col-clear,
-  .col-tablet-clear {
-    clear: none;
-  }
-  .col-hide,
-  .col-tablet-hide {
-    display: block;
-  }
+    *width: 872px; }
+
+  .col-clear, .col-tablet-clear {
+    clear: none; }
+
+  .col-hide, .col-tablet-hide {
+    display: block; }
+
   .col-mobile-1 {
-    width: 8.333333333333334%;
-    *width: 36px;
-  }
+    width: 8.33333%;
+    *width: 36px; }
+
   .col-mobile-2 {
-    width: 16.666666666666668%;
-    *width: 112px;
-  }
+    width: 16.66667%;
+    *width: 112px; }
+
   .col-mobile-3 {
     width: 25%;
-    *width: 188px;
-  }
+    *width: 188px; }
+
   .col-mobile-4 {
-    width: 33.333333333333336%;
-    *width: 264px;
-  }
+    width: 33.33333%;
+    *width: 264px; }
+
   .col-mobile-5 {
-    width: 41.66666666666667%;
-    *width: 340px;
-  }
+    width: 41.66667%;
+    *width: 340px; }
+
   .col-mobile-6 {
     width: 50%;
-    *width: 416px;
-  }
+    *width: 416px; }
+
   .col-mobile-7 {
-    width: 58.333333333333336%;
-    *width: 492px;
-  }
+    width: 58.33333%;
+    *width: 492px; }
+
   .col-mobile-8 {
-    width: 66.66666666666667%;
-    *width: 568px;
-  }
+    width: 66.66667%;
+    *width: 568px; }
+
   .col-mobile-9 {
     width: 75%;
-    *width: 644px;
-  }
+    *width: 644px; }
+
   .col-mobile-10 {
-    width: 83.33333333333334%;
-    *width: 720px;
-  }
+    width: 83.33333%;
+    *width: 720px; }
+
   .col-mobile-11 {
-    width: 91.66666666666667%;
-    *width: 796px;
-  }
+    width: 91.66667%;
+    *width: 796px; }
+
   .col-mobile-12 {
     width: 100%;
-    *width: 872px;
-  }
+    *width: 872px; }
+
   .col-mobile-clear {
-    clear: left;
-  }
+    clear: left; }
+
   .col-mobile-hide {
-    display: none;
-  }
-}
+    display: none; } }
