@@ -1,0 +1,9 @@
+/**
+ * Frag Default Grid 0.0.0
+ *
+ * Frag is a fluid, responsive, friendly, simple grid system for
+ * CSS written in Sass. http://frag.rowanmanning.co.uk/
+ *
+ * Copyright 2013, Rowan Manning
+ * Dual licensed under the MIT license.
+ */
