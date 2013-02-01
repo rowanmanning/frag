@@ -20,31 +20,23 @@
 }
 
 // Define a grid class
-@mixin frag-grid ($class, $maxwidth) {
+@mixin frag-grid ($class, $colclass, $maxwidth, $gutter: 40px) {
     .#{$class} {
         @include frag-box;
         @include frag-clearfix;
         width: auto;
         max-width: $maxwidth;
     }
-}
-
-// Define column classes
-@mixin frag-cols ($prefix, $count: 12, $gutter: 40px) {
-
-    // Get a selector string for all columns
-    $cols-selector: ();
-    @for $i from 1 through $count {
-        $cols-selector: $cols-selector, unquote(".#{$prefix}#{$i}");
-    }
-
-    // Styles for all columns
-    #{$cols-selector} {
+    .#{$colclass} {
         @include frag-box;
         float: left;
         padding-left: $gutter / 2;
         padding-right: $gutter / 2;
     }
+}
+
+// Define column classes
+@mixin frag-cols ($prefix, $count: 12) {
 
     // Loop columns and provide individual widths
     @for $i from 1 through $count {

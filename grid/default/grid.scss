@@ -18,14 +18,15 @@ $frag-gutter-width: 40px !default;
 // Create grid class
 @include frag-grid(
     $class: 'grid',
-    $maxwidth: $frag-max-width
+    $colclass: 'col',
+    $maxwidth: $frag-max-width,
+    $gutter: $frag-gutter-width
 );
 
 // Create column classes
 @include frag-cols(
     $prefix: 'c-',
-    $count: $frag-column-count,
-    $gutter: $frag-gutter-width
+    $count: $frag-column-count
 );
 
 // Create utility classes
@@ -39,8 +40,7 @@ $frag-gutter-width: 40px !default;
     // Create column classes
     @include frag-cols(
         $prefix: 'ca-',
-        $count: $frag-column-count-alpha,
-        $gutter: $frag-gutter-width
+        $count: $frag-column-count-alpha
     );
 
     // Create/reset utility classes
@@ -57,8 +57,7 @@ $frag-gutter-width: 40px !default;
     // Create column classes
     @include frag-cols(
         $prefix: 'cb-',
-        $count: $frag-column-count-bravo,
-        $gutter: $frag-gutter-width
+        $count: $frag-column-count-bravo
     );
 
     // Create/reset utility classes

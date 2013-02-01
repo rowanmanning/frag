@@ -25,7 +25,7 @@
   clear: both;
 }
 
-.c-1, .c-2, .c-3, .c-4 {
+.col {
   display: block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -65,16 +65,6 @@
 }
 
 @media all and (min-width: 680px) {
-  .ca-1, .ca-2, .ca-3, .ca-4, .ca-5, .ca-6, .ca-7, .ca-8, .ca-9, .ca-10, .ca-11, .ca-12 {
-    display: block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .ca-1 {
     width: 8.33333%;
   }
@@ -145,16 +135,6 @@
   }
 }
 @media all and (min-width: 1100px) {
-  .cb-1, .cb-2, .cb-3, .cb-4, .cb-5, .cb-6, .cb-7, .cb-8, .cb-9, .cb-10, .cb-11, .cb-12 {
-    display: block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .cb-1 {
     width: 8.33333%;
   }
