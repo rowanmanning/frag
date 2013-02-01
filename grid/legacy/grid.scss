@@ -1,0 +1,68 @@
+
+// Dependencies
+@import "../../lib/frag";
+
+// Maximum widths
+$frag-max-width: 1200px !default;
+
+// Break-points
+$frag-break-tablet: 1000px !default;
+$frag-break-mobile: 640px !default;
+
+// Columns and gutters
+$frag-column-count: 12 !default;
+$frag-gutter-width: 40px !default;
+
+// Create grid class
+@include frag-grid(
+    $class: 'grid',
+    $maxwidth: $frag-max-width
+);
+
+// Create column classes
+@include frag-cols(
+    $prefix: 'col-',
+    $count: $frag-column-count,
+    $gutter: $frag-gutter-width
+);
+
+// Create utility classes
+@include frag-util(
+    $prefix: 'col-'
+);
+
+// Tablet break-point
+@media (max-width: $frag-break-tablet) {
+
+    // Create column classes
+    @include frag-cols(
+        $prefix: 'col-tablet-',
+        $count: $frag-column-count,
+        $gutter: $frag-gutter-width
+    );
+
+    // Create utility classes (and reset old ones)
+    @include frag-util(
+        $prefix: 'col-tablet-',
+        $reset: 'col-'
+    );
+
+}
+
+// Mobile break-point
+@media (max-width: $frag-break-mobile) {
+
+    // Create column classes
+    @include frag-cols(
+        $prefix: 'col-mobile-',
+        $count: $frag-column-count,
+        $gutter: $frag-gutter-width
+    );
+
+    // Create utility classes (and reset old ones)
+    @include frag-util(
+        $prefix: 'col-mobile-',
+        $reset: 'col-tablet-'
+    );
+
+}
