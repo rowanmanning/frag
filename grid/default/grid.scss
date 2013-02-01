@@ -1,4 +1,54 @@
 
+// Dependencies
 @import "../../lib/frag";
 
-/* Default grid code goes here */
+// Create grid class
+@include frag-grid(
+    $class: 'grid',
+    $maxwidth: 1200px
+);
+
+// Create column classes
+@include frag-cols(
+    $prefix: 'col-',
+    $count: 12
+);
+
+// Create utility classes
+@include frag-util(
+    $prefix: 'col-'
+);
+
+// Tablet break-point
+@media (max-width: 1000px) {
+
+    // Create column classes
+    @include frag-cols(
+        $prefix: 'col-tablet-',
+        $count: 12
+    );
+
+    // Create utility classes (and reset old ones)
+    @include frag-util(
+        $prefix: 'col-tablet-',
+        $reset: 'col-'
+    );
+
+}
+
+// Mobile break-point
+@media (max-width: 640px) {
+
+    // Create column classes
+    @include frag-cols(
+        $prefix: 'col-mobile-',
+        $count: 12
+    );
+
+    // Create utility classes (and reset old ones)
+    @include frag-util(
+        $prefix: 'col-mobile-',
+        $reset: 'col-tablet-'
+    );
+
+}
