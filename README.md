@@ -21,14 +21,14 @@ The `compile` and `minify` targets accept a grid argument, which allows you to s
 
 ```sh
 $ make compile # compile grid/default/grid.scss
-$ make compile grid=66col # compile grid/66col/grid.scss
+$ make compile grid=legacy # compile grid/legacy/grid.scss
 ```
 
 When no build target is specified, make will run minify and compile. This means you can use the following commands for brevity:
 
 ```sh
 $ make
-$ make grid=66col
+$ make grid=legacy
 ```
 
 
