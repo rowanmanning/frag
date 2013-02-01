@@ -1,8 +1,10 @@
 
-Frag
-====
+Frag (2.x Beta)
+===============
 
 Frag is a fluid, responsive, friendly, simple grid system for CSS written in Sass.
+
+If you're looking for Frag 1.x, it's [available here][1x].
 
 
 Development
@@ -40,6 +42,7 @@ Dual licensed under the [MIT][mit] license.
 
 
 
+[1x]: https://github.com/rowanmanning/frag/tree/1.x
 [make]: http://gnuwin32.sourceforge.net/packages/make.htm
 [mit]: http://opensource.org/licenses/mit-license.php
 [sass]: http://sass-lang.com/download.html
