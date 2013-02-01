@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+
+    <meta charset="utf-8"/>
+    <title>Frag Testing</title>
+
+    <!-- Load in the frag build -->
+    <link rel="stylesheet" type="text/css" href="../build/frag-default.css"/>
+
+    <!-- Viewport config for mobile/tablet -->
+    <meta name="viewport" content="width=device-width"/>
+
+    <!-- These styles are just here for demonstration purposes -->
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 20px;
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 20px 0;
+            padding-bottom: 20px;
+            border-bottom: 5px solid #ddd;
+        }
+        .grid {
+            margin: 20px auto;
+        }
+        .grid .grid {
+            margin: 0;
+        }
+        .grid .c-1, .grid .c-2, .grid .c-3, .grid .c-4, .grid .c-5, .grid .c-6,
+        .grid .c-7, .grid .c-8, .grid .c-9, .grid .c-10, .grid .c-11, .grid .c-12 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: #eee;
+            border-top: 5px solid #cae;
+        }
+        .grid .alt {
+            background-color: #ddd;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Frag Testing</h1>
+
+    <div class="grid">
+        <div class="c-1 ca-3 cb-3">&hellip;</div>
+        <div class="c-1 ca-3 cb-3 alt">&hellip;</div>
+        <div class="c-1 ca-3 cb-3">&hellip;</div>
+        <div class="c-1 ca-3 cb-3 alt">&hellip;</div>
+    </div>
+
+    <div class="grid">
+        <div class="c-2 ca-4 cb-2">&hellip;</div>
+        <div class="c-2 ca-4 cb-2 alt">&hellip;</div>
+        <div class="c-2 ca-4 cb-2">&hellip;</div>
+        <div class="c-2 ca-4 cb-2 alt">&hellip;</div>
+        <div class="c-2 ca-4 cb-2">&hellip;</div>
+        <div class="c-2 ca-4 cb-2 alt">&hellip;</div>
+    </div>
+
+    <div class="grid">
+        <div class="c-4 ca-6 cb-3">&hellip;</div>
+        <div class="c-4 ca-6 cb-3 alt">&hellip;</div>
+        <div class="c-4 ca-6 cb-3">&hellip;</div>
+        <div class="c-4 ca-6 cb-3 alt">&hellip;</div>
+    </div>
+
+</body>
+</html>

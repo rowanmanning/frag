@@ -2,53 +2,69 @@
 // Dependencies
 @import "../../lib/frag";
 
+// Maximum widths
+$frag-max-width: 1200px !default;
+
+// Break-points
+$frag-break-alpha: 680px !default;
+$frag-break-bravo: 1100px !default;
+
+// Columns and gutters
+$frag-column-count: 4 !default;
+$frag-column-count-alpha: 12 !default;
+$frag-column-count-bravo: 12 !default;
+$frag-gutter-width: 40px !default;
+
 // Create grid class
 @include frag-grid(
     $class: 'grid',
-    $maxwidth: 1200px
+    $maxwidth: $frag-max-width
 );
 
 // Create column classes
 @include frag-cols(
-    $prefix: 'col-',
-    $count: 12
+    $prefix: 'c-',
+    $count: $frag-column-count,
+    $gutter: $frag-gutter-width
 );
 
 // Create utility classes
 @include frag-util(
-    $prefix: 'col-'
+    $prefix: 'c-'
 );
 
-// Tablet break-point
-@media (max-width: 1000px) {
+// Break-point alpha
+@media all and (min-width: $frag-break-alpha) {
 
     // Create column classes
     @include frag-cols(
-        $prefix: 'col-tablet-',
-        $count: 12
+        $prefix: 'ca-',
+        $count: $frag-column-count-alpha,
+        $gutter: $frag-gutter-width
     );
 
-    // Create utility classes (and reset old ones)
+    // Create/reset utility classes
     @include frag-util(
-        $prefix: 'col-tablet-',
-        $reset: 'col-'
+        $prefix: 'ca-',
+        $reset: 'c-'
     );
 
 }
 
-// Mobile break-point
-@media (max-width: 640px) {
+// Break-point bravo
+@media all and (min-width: $frag-break-bravo) {
 
     // Create column classes
     @include frag-cols(
-        $prefix: 'col-mobile-',
-        $count: 12
+        $prefix: 'cb-',
+        $count: $frag-column-count-bravo,
+        $gutter: $frag-gutter-width
     );
 
-    // Create utility classes (and reset old ones)
+    // Create/reset utility classes
     @include frag-util(
-        $prefix: 'col-mobile-',
-        $reset: 'col-tablet-'
+        $prefix: 'cb-',
+        $reset: 'ca-'
     );
 
 }
