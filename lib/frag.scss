@@ -1,2 +1,91 @@
 
-/* Frag library code goes here */
+// Clearfix styles
+@mixin frag-clearfix {
+    zoom: 1;
+    &:before, &:after {
+        display: table;
+        content: '';
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Box styles
+@mixin frag-box {
+    display: block;
+    -webkit-box-sizing: border-box; // Safari 3.1–5.0
+    -moz-box-sizing: border-box; // Firefox 2+
+    box-sizing: border-box; // W3C standard
+}
+
+// Define a grid class
+@mixin frag-grid ($class, $maxwidth) {
+    .#{$class} {
+        @include frag-box;
+        @include frag-clearfix;
+        width: auto;
+        max-width: $maxwidth;
+    }
+}
+
+// Define column classes
+@mixin frag-cols ($prefix, $count: 12, $gutter: 40px) {
+
+    // Get a selector string for all columns
+    $cols-selector: ();
+    @for $i from 1 through $count {
+        $cols-selector: $cols-selector, unquote(".#{$prefix}#{$i}");
+    }
+
+    // Styles for all columns
+    #{$cols-selector} {
+        @include frag-box;
+        float: left;
+        padding-left: $gutter / 2;
+        padding-right: $gutter / 2;
+    }
+
+    // Loop columns and provide individual widths
+    @for $i from 1 through $count {
+        .#{$prefix}#{$i} {
+            width: (100% / $count) * $i;
+        }
+    }
+
+}
+
+// Define grid utils
+@mixin frag-util ($prefix, $reset: "") {
+
+    @if $reset != "" {
+
+        // Clear column
+        .#{$reset}clear {
+            clear: none;
+        }
+
+        // Hidden column
+        .#{$reset}hide {
+            display: block;
+        }
+
+    }
+
+    // Clear column
+    .#{$prefix}clear {
+        clear: left;
+    }
+
+    // Gutterless column
+    .#{$prefix}degutter {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    // Hidden column
+    .#{$prefix}hide {
+        display: none;
+    }
+
+}
