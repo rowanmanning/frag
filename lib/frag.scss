@@ -59,20 +59,14 @@
 }
 
 // Define grid utils
-@mixin frag-util ($prefix, $reset: "") {
+@mixin frag-util ($prefix) {
 
-    @if $reset != "" {
-
-        // Hidden column
-        .#{$reset}hide {
-            display: block;
-        }
-
-    }
-
-    // Hidden column
+    // Column hiding
     .#{$prefix}hide {
         display: none;
+    }
+    .#{$prefix}show {
+        display: block;
     }
 
     // Column clearing

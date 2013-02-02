@@ -41,10 +41,9 @@ $frag-gutter-width: 40px !default;
         $count: $frag-column-count
     );
 
-    // Create utility classes (and reset old ones)
+    // Create utility classes
     @include frag-util(
-        $prefix: 'col-tablet-',
-        $reset: 'col-'
+        $prefix: 'col-tablet-'
     );
 
 }
@@ -58,10 +57,9 @@ $frag-gutter-width: 40px !default;
         $count: $frag-column-count
     );
 
-    // Create utility classes (and reset old ones)
+    // Create utility classes
     @include frag-util(
-        $prefix: 'col-mobile-',
-        $reset: 'col-tablet-'
+        $prefix: 'col-mobile-'
     );
 
 }

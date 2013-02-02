@@ -92,6 +92,10 @@
   display: none;
 }
 
+.c-show {
+  display: block;
+}
+
 .c-clear {
   clear: left;
 }
@@ -149,12 +153,12 @@
     width: 100%;
   }
 
-  .c-hide {
-    display: block;
-  }
-
   .ca-hide {
     display: none;
+  }
+
+  .ca-show {
+    display: block;
   }
 
   .ca-clear {
@@ -214,12 +218,12 @@
     width: 100%;
   }
 
-  .ca-hide {
-    display: block;
-  }
-
   .cb-hide {
     display: none;
+  }
+
+  .cb-show {
+    display: block;
   }
 
   .cb-clear {

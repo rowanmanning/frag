@@ -92,6 +92,10 @@
   display: none;
 }
 
+.col-show {
+  display: block;
+}
+
 .col-clear {
   clear: left;
 }
@@ -149,12 +153,12 @@
     width: 100%;
   }
 
-  .col-hide {
-    display: block;
-  }
-
   .col-tablet-hide {
     display: none;
+  }
+
+  .col-tablet-show {
+    display: block;
   }
 
   .col-tablet-clear {
@@ -214,12 +218,12 @@
     width: 100%;
   }
 
-  .col-tablet-hide {
-    display: block;
-  }
-
   .col-mobile-hide {
     display: none;
+  }
+
+  .col-mobile-show {
+    display: block;
   }
 
   .col-mobile-clear {
