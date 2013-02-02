@@ -21,18 +21,29 @@
 
 // Define a grid class
 @mixin frag-grid ($class, $colclass, $maxwidth, $gutter: 40px) {
+
+    // Grid
     .#{$class} {
         @include frag-box;
         @include frag-clearfix;
         width: auto;
         max-width: $maxwidth;
     }
+
+    // Column
     .#{$colclass} {
         @include frag-box;
         float: left;
         padding-left: $gutter / 2;
         padding-right: $gutter / 2;
     }
+
+    // Gutterless column
+    .#{$colclass}-degutter {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
 
 // Define column classes
@@ -52,11 +63,6 @@
 
     @if $reset != "" {
 
-        // Clear column
-        .#{$reset}clear {
-            clear: none;
-        }
-
         // Hidden column
         .#{$reset}hide {
             display: block;
@@ -64,20 +70,17 @@
 
     }
 
-    // Clear column
-    .#{$prefix}clear {
-        clear: left;
-    }
-
-    // Gutterless column
-    .#{$prefix}degutter {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
     // Hidden column
     .#{$prefix}hide {
         display: none;
+    }
+
+    // Column clearing
+    .#{$prefix}clear {
+        clear: left;
+    }
+    .#{$prefix}unclear {
+        clear: none;
     }
 
 }

@@ -81,14 +81,14 @@
     <h2>Columns with Unequal heights</h2>
 
     <div class="grid">
-        <div class="col c-3">01<br/>&hellip;</div>
-        <div class="col c-3 alt">02<br/>&hellip;<br/>&hellip;</div>
-        <div class="col c-3">03<br/>&hellip;<br/>&hellip;<br/>&hellip;</div>
-        <div class="col c-3 alt">04</div>
-        <div class="col c-3 c-clear ca-clear cb-clear">05</div>
-        <div class="col c-3 alt">06<br/>&hellip;<br/>&hellip;</div>
-        <div class="col c-3">07<br/>&hellip;</div>
-        <div class="col c-3 alt">08<br/>&hellip;<br/>&hellip;<br/>&hellip;<br/>&hellip;</div>
+        <div class="col c-6 ca-3">01<br/>&hellip;</div>
+        <div class="col c-6 ca-3 alt">02<br/>&hellip;<br/>&hellip;</div>
+        <div class="col c-6 ca-3 c-clear ca-unclear">03<br/>&hellip;<br/>&hellip;<br/>&hellip;</div>
+        <div class="col c-6 ca-3 alt">04</div>
+        <div class="col c-6 ca-3 c-clear">05</div>
+        <div class="col c-6 ca-3 alt">06<br/>&hellip;<br/>&hellip;</div>
+        <div class="col c-6 ca-3 c-clear ca-unclear">07<br/>&hellip;</div>
+        <div class="col c-6 ca-3 alt">08<br/>&hellip;<br/>&hellip;<br/>&hellip;<br/>&hellip;</div>
     </div>
 
 
@@ -122,10 +122,10 @@
     <h2>Nested Grids With Additional Gutters Removed</h2>
 
     <div class="grid">
-        <div class="col c-12 ca-6 c-degutter padless-bottom">
+        <div class="col c-12 ca-6 col-degutter padless-bottom">
             01<br/><br/>
             <div class="grid">
-                <div class="col c-12 alt c-degutter padless-bottom">
+                <div class="col c-12 alt col-degutter padless-bottom">
                     01<br/><br/>
                     <div class="grid">
                         <div class="col c-3">01</div>
@@ -136,7 +136,7 @@
                 </div>
             </div>
         </div>
-        <div class="col c-12 ca-6 alt c-degutter padless-bottom">
+        <div class="col c-12 ca-6 alt col-degutter padless-bottom">
             01<br/><br/>
             <div class="grid">
                 <div class="col c-6">01</div>
