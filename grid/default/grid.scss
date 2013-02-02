@@ -15,21 +15,21 @@ $frag-gutter-width: 40px !default;
 
 // Create grid class
 @include frag-grid(
-    $class: 'grid',
-    $colclass: 'col',
+    $class: "grid",
+    $colclass: "col",
     $maxwidth: $frag-max-width,
     $gutter: $frag-gutter-width
 );
 
 // Create column classes
 @include frag-cols(
-    $prefix: 'c-',
+    $prefix: "c-",
     $count: $frag-column-count
 );
 
 // Create utility classes
 @include frag-util(
-    $prefix: 'c-'
+    $prefix: "c-"
 );
 
 // Break-point alpha
@@ -37,13 +37,13 @@ $frag-gutter-width: 40px !default;
 
     // Create column classes
     @include frag-cols(
-        $prefix: 'ca-',
+        $prefix: "ca-",
         $count: $frag-column-count
     );
 
     // Create utility classes
     @include frag-util(
-        $prefix: 'ca-'
+        $prefix: "ca-"
     );
 
 }
@@ -53,13 +53,13 @@ $frag-gutter-width: 40px !default;
 
     // Create column classes
     @include frag-cols(
-        $prefix: 'cb-',
+        $prefix: "cb-",
         $count: $frag-column-count
     );
 
     // Create utility classes
     @include frag-util(
-        $prefix: 'cb-'
+        $prefix: "cb-"
     );
 
 }

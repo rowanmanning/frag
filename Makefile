@@ -9,14 +9,15 @@ all: minify
 minify: compile
 	@echo "Minifying CSS...";
 	@echo "`cat ./grid/$(grid)/head.txt`\n\n`sass ./grid/$(grid)/grid.scss --style compressed`" \
-		> "build/frag-$(grid).min.css";
+		> "./build/$(grid)/frag-$(grid).min.css";
 	@echo "  > Done"
 
 # Create CSS from Sass
 compile: prepare
+	@mkdir -p "./build/$(grid)"
 	@echo "Compiling Sass to CSS for '$(grid)' grid...";
 	@echo "`cat ./grid/$(grid)/head.txt`\n\n`sass ./grid/$(grid)/grid.scss --style expanded`" \
-		> "build/frag-$(grid).css";
+		> "./build/$(grid)/frag-$(grid).css";
 	@echo "  > Done"
 
 # Prepare the build directory structure
