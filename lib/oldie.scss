@@ -1,16 +1,16 @@
 
 // Define a grid class
-@mixin frag-oldie ($class, $colclass, $maxwidth, $colprefix, $count, $gutter: 40px) {
+@mixin frag-oldie ($class, $max-width, $col-prefix, $count, $gutter: 40px) {
 
     // Grid
     .#{$class} {
-        width: $maxwidth;
+        width: $max-width;
     }
 
     // Loop columns and provide individual widths
     @for $i from 1 through $count {
-        .#{$colprefix}#{$i} {
-            $single-col-width: floor($maxwidth / $count);
+        .#{$col-prefix}#{$i} {
+            $single-col-width: floor($max-width / $count);
             width: ($single-col-width * $i) - $gutter;
         }
     }
@@ -18,7 +18,7 @@
     // Generate column selector
     $column-selector: ();
     @for $i from 1 through $count {
-        $column-selector: $column-selector, unquote(".#{$colprefix}#{$i}");
+        $column-selector: $column-selector, unquote(".#{$col-prefix}#{$i}");
     }
 
     // Flatten nested grids

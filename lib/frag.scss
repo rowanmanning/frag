@@ -20,18 +20,18 @@
 }
 
 // Define a grid class
-@mixin frag-grid ($class, $colclass, $maxwidth, $gutter: 40px) {
+@mixin frag-grid ($class, $col-class, $max-width, $gutter: 40px) {
 
     // Grid
     .#{$class} {
         @include frag-box;
         @include frag-clearfix;
         width: auto;
-        max-width: $maxwidth;
+        max-width: $max-width;
     }
 
     // Column
-    .#{$colclass} {
+    .#{$col-class} {
         @include frag-box;
         float: left;
         padding-left: $gutter / 2;
@@ -39,7 +39,7 @@
     }
 
     // Gutterless column
-    .#{$colclass}-degutter {
+    .#{$col-class}-degutter {
         padding-left: 0;
         padding-right: 0;
     }

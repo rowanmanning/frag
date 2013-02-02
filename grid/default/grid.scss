@@ -16,8 +16,8 @@ $frag-gutter-width: 40px !default;
 // Create grid class
 @include frag-grid(
     $class: "grid",
-    $colclass: "col",
-    $maxwidth: $frag-max-width,
+    $col-class: "col",
+    $max-width: $frag-max-width,
     $gutter: $frag-gutter-width
 );
 
