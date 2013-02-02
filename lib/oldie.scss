@@ -1,0 +1,33 @@
+
+// Define a grid class
+@mixin frag-oldie ($class, $colclass, $maxwidth, $colprefix, $count, $gutter: 40px) {
+
+    // Grid
+    .#{$class} {
+        width: $maxwidth;
+    }
+
+    // Loop columns and provide individual widths
+    @for $i from 1 through $count {
+        .#{$colprefix}#{$i} {
+            $single-col-width: floor($maxwidth / $count);
+            width: ($single-col-width * $i) - $gutter;
+        }
+    }
+
+    // Generate column selector
+    $column-selector: ();
+    @for $i from 1 through $count {
+        $column-selector: $column-selector, unquote(".#{$colprefix}#{$i}");
+    }
+
+    // Flatten nested grids
+    .#{$class} .#{$class} {
+        width: auto;
+        #{$column-selector} {
+            width: auto;
+            float: none;
+        }
+    }
+
+}

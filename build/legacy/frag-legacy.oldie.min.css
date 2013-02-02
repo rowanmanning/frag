@@ -1,0 +1,11 @@
+/**
+ * Frag Legacy Grid 0.0.0
+ *
+ * Frag is a fluid, responsive, friendly, simple grid system for
+ * CSS written in Sass. http://frag.rowanmanning.co.uk/
+ *
+ * Copyright 2013, Rowan Manning
+ * Dual licensed under the MIT license.
+ */
+
+.grid{width:980px}.col-1{width:41px}.col-2{width:122px}.col-3{width:203px}.col-4{width:284px}.col-5{width:365px}.col-6{width:446px}.col-7{width:527px}.col-8{width:608px}.col-9{width:689px}.col-10{width:770px}.col-11{width:851px}.col-12{width:932px}.grid .grid{width:auto}.grid .grid .col-1,.grid .grid .col-2,.grid .grid .col-3,.grid .grid .col-4,.grid .grid .col-5,.grid .grid .col-6,.grid .grid .col-7,.grid .grid .col-8,.grid .grid .col-9,.grid .grid .col-10,.grid .grid .col-11,.grid .grid .col-12{width:auto;float:none}

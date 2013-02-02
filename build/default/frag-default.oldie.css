@@ -1,0 +1,69 @@
+/**
+ * Frag Default Grid 0.0.0
+ *
+ * Frag is a fluid, responsive, friendly, simple grid system for
+ * CSS written in Sass. http://frag.rowanmanning.co.uk/
+ *
+ * Copyright 2013, Rowan Manning
+ * Dual licensed under the MIT license.
+ */
+
+.grid {
+  width: 980px;
+}
+
+.c-1 {
+  width: 41px;
+}
+
+.c-2 {
+  width: 122px;
+}
+
+.c-3 {
+  width: 203px;
+}
+
+.c-4 {
+  width: 284px;
+}
+
+.c-5 {
+  width: 365px;
+}
+
+.c-6 {
+  width: 446px;
+}
+
+.c-7 {
+  width: 527px;
+}
+
+.c-8 {
+  width: 608px;
+}
+
+.c-9 {
+  width: 689px;
+}
+
+.c-10 {
+  width: 770px;
+}
+
+.c-11 {
+  width: 851px;
+}
+
+.c-12 {
+  width: 932px;
+}
+
+.grid .grid {
+  width: auto;
+}
+.grid .grid .c-1, .grid .grid .c-2, .grid .grid .c-3, .grid .grid .c-4, .grid .grid .c-5, .grid .grid .c-6, .grid .grid .c-7, .grid .grid .c-8, .grid .grid .c-9, .grid .grid .c-10, .grid .grid .c-11, .grid .grid .c-12 {
+  width: auto;
+  float: none;
+}
