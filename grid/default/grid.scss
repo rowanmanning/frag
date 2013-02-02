@@ -10,9 +10,7 @@ $frag-break-alpha: 680px !default;
 $frag-break-bravo: 1100px !default;
 
 // Columns and gutters
-$frag-column-count: 4 !default;
-$frag-column-count-alpha: 12 !default;
-$frag-column-count-bravo: 12 !default;
+$frag-column-count: 12 !default;
 $frag-gutter-width: 40px !default;
 
 // Create grid class
@@ -40,7 +38,7 @@ $frag-gutter-width: 40px !default;
     // Create column classes
     @include frag-cols(
         $prefix: 'ca-',
-        $count: $frag-column-count-alpha
+        $count: $frag-column-count
     );
 
     // Create/reset utility classes
@@ -57,7 +55,7 @@ $frag-gutter-width: 40px !default;
     // Create column classes
     @include frag-cols(
         $prefix: 'cb-',
-        $count: $frag-column-count-bravo
+        $count: $frag-column-count
     );
 
     // Create/reset utility classes

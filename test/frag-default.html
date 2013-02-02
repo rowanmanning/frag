@@ -8,7 +8,7 @@
     <!-- Load in the frag build -->
     <link rel="stylesheet" type="text/css" href="../build/frag-default.css"/>
 
-    <!-- Viewport config for mobile/tablet -->
+    <!-- Viewport config -->
     <meta name="viewport" content="width=device-width"/>
 
     <!-- These styles are just here for demonstration purposes -->
@@ -40,6 +40,9 @@
             background-color: #eee;
             border-top: 5px solid #cae;
         }
+        .padless-bottom {
+            padding-bottom: 0;
+        }
         .grid .alt {
             background-color: #ddd;
         }
@@ -48,30 +51,124 @@
 </head>
 <body>
 
+
     <h1>Frag Testing</h1>
 
     <div class="grid">
-        <div class="col c-1 ca-3 cb-3">&hellip;</div>
-        <div class="col c-1 ca-3 cb-3 alt">&hellip;</div>
-        <div class="col c-1 ca-3 cb-3">&hellip;</div>
-        <div class="col c-1 ca-3 cb-3 alt">&hellip;</div>
+        <div class="col c-3">01</div>
+        <div class="col c-3 alt">02</div>
+        <div class="col c-3">03</div>
+        <div class="col c-3 alt">04</div>
     </div>
 
     <div class="grid">
-        <div class="col c-2 ca-4 cb-2">&hellip;</div>
-        <div class="col c-2 ca-4 cb-2 alt">&hellip;</div>
-        <div class="col c-2 ca-4 cb-2">&hellip;</div>
-        <div class="col c-2 ca-4 cb-2 alt">&hellip;</div>
-        <div class="col c-2 ca-4 cb-2">&hellip;</div>
-        <div class="col c-2 ca-4 cb-2 alt">&hellip;</div>
+        <div class="col c-6 ca-4 cb-2">01</div>
+        <div class="col c-6 ca-4 cb-2 alt">02</div>
+        <div class="col c-6 ca-4 cb-2">03</div>
+        <div class="col c-6 ca-4 cb-2 alt">04</div>
+        <div class="col c-6 ca-4 cb-2">05</div>
+        <div class="col c-6 ca-4 cb-2 alt">06</div>
     </div>
 
     <div class="grid">
-        <div class="col c-4 ca-6 cb-3">&hellip;</div>
-        <div class="col c-4 ca-6 cb-3 alt">&hellip;</div>
-        <div class="col c-4 ca-6 cb-3">&hellip;</div>
-        <div class="col c-4 ca-6 cb-3 alt">&hellip;</div>
+        <div class="col c-12 ca-6 cb-3">01</div>
+        <div class="col c-12 ca-6 cb-3 alt">02</div>
+        <div class="col c-12 ca-6 cb-3">03</div>
+        <div class="col c-12 ca-6 cb-3 alt">04</div>
     </div>
+
+
+    <h2>Columns with Unequal heights</h2>
+
+    <div class="grid">
+        <div class="col c-3">01<br/>&hellip;</div>
+        <div class="col c-3 alt">02<br/>&hellip;<br/>&hellip;</div>
+        <div class="col c-3">03<br/>&hellip;<br/>&hellip;<br/>&hellip;</div>
+        <div class="col c-3 alt">04</div>
+        <div class="col c-3 c-clear ca-clear cb-clear">05</div>
+        <div class="col c-3 alt">06<br/>&hellip;<br/>&hellip;</div>
+        <div class="col c-3">07<br/>&hellip;</div>
+        <div class="col c-3 alt">08<br/>&hellip;<br/>&hellip;<br/>&hellip;<br/>&hellip;</div>
+    </div>
+
+
+    <h2>Nested Grids</h2>
+
+    <div class="grid">
+        <div class="col c-12 ca-6 padless-bottom">
+            01<br/><br/>
+            <div class="grid">
+                <div class="col c-12 alt padless-bottom">
+                    01<br/><br/>
+                    <div class="grid">
+                        <div class="col c-3">01</div>
+                        <div class="col c-3">02</div>
+                        <div class="col c-3">03</div>
+                        <div class="col c-3">04</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col c-12 ca-6 alt padless-bottom">
+            01<br/><br/>
+            <div class="grid">
+                <div class="col c-6">01</div>
+                <div class="col c-6">02</div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2>Nested Grids With Additional Gutters Removed</h2>
+
+    <div class="grid">
+        <div class="col c-12 ca-6 c-degutter padless-bottom">
+            01<br/><br/>
+            <div class="grid">
+                <div class="col c-12 alt c-degutter padless-bottom">
+                    01<br/><br/>
+                    <div class="grid">
+                        <div class="col c-3">01</div>
+                        <div class="col c-3">02</div>
+                        <div class="col c-3">03</div>
+                        <div class="col c-3">04</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col c-12 ca-6 alt c-degutter padless-bottom">
+            01<br/><br/>
+            <div class="grid">
+                <div class="col c-6">01</div>
+                <div class="col c-6">02</div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2>Hidden Columns</h2>
+
+    <div class="grid">
+        <div class="col c-12">
+            Visible at all screen sizes
+        </div>
+        <div class="col c-12 ca-hide c-hide">
+            Visible at bravo size only
+        </div>
+        <div class="col c-12 cb-hide c-hide">
+            Visible at alpha size only
+        </div>
+        <div class="col c-12 cb-hide ca-hide">
+            Visible at default size only
+        </div>
+        <div class="col c-12 c-hide">
+            Visible at bravo and alpha sizes only
+        </div>
+        <div class="col c-12 cb-hide">
+            Visible at alpha and default sizes only
+        </div>
+    </div>
+
 
 </body>
 </html>
