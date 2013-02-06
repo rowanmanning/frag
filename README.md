@@ -1,10 +1,18 @@
 
-Frag (2.x Beta)
-===============
+Frag (2.x Alpha)
+================
 
 Frag is a fluid, responsive, friendly, simple grid system for CSS written in Sass.
 
-If you're looking for Frag 1.x, it's [available here][1x].
+Note: If you're looking for Frag 1.x, it's [available here][1x].
+
+
+Installing
+----------
+
+You can use Frag in your project by installing it through [Component][component] with `component install rowanmanning/frag` (or by adding it as a project dependency).
+
+You can also use frag without a package manager just by including `build/<grid>/frag-<grid>.css` in your code. If you already use Sass for your project or site then you can `@import` the Sass source files directly – this allows you to customize the grid spacing and break-points.
 
 
 Development
@@ -43,6 +51,7 @@ Dual licensed under the [MIT][mit] license.
 
 
 [1x]: https://github.com/rowanmanning/frag/tree/1.x
+[component]: https://github.com/component/component
 [make]: http://gnuwin32.sourceforge.net/packages/make.htm
 [mit]: http://opensource.org/licenses/mit-license.php
 [sass]: http://sass-lang.com/download.html

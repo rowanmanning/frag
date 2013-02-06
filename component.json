@@ -1,0 +1,23 @@
+{
+    "name": "frag",
+    "version": "2.0.0-alpha",
+    "description": "Frag is a fluid, responsive, friendly, simple grid system for CSS written in Sass.",
+    "keywords": ["css", "fluid", "grid", "mobile", "oocss", "responsive", "sass"],
+    "license": "MIT",
+
+    "repo": "rowanmanning/frag",
+    "homepage": "http://frag.rowanmanning.co.uk/",
+    "bugs": "https://github.com/rowanmanning/frag/issues",
+
+    "author": {
+        "name": "Rowan Manning",
+        "url": "http://rowanmanning.co.uk/"
+    },
+
+    "styles": [
+        "build/default/frag-default.css",
+        "build/default/frag-default.oldie.css",
+        "build/legacy/frag-legacy.css",
+        "build/legacy/frag-legacy.oldie.css"
+    ]
+}
