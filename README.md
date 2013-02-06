@@ -2,9 +2,13 @@
 Frag (2.x Alpha)
 ================
 
-Frag is a fluid, responsive, friendly, simple grid system for CSS written in Sass.
+Frag is a fluid, responsive, friendly, simple grid system for CSS written in Sass. [Read the documentation here](docs).
 
-Note: If you're looking for Frag 1.x, it's [available here][1x].
+**Current Version:** *2.0.0-alpha*  
+**Full Support (testing in progress):** *Android Browser 2.2–4.2, Firefox 3.6, Firefox 4–16, Google Chrome 14–23, Internet Explorer 8–10, Mobile Safari iOS 4–6, Opera 12.10, Safari 5–6*  
+**Degraded Support:** *Internet Explorer 6–7*
+
+*Note: If you're looking for Frag 1.x, it's [available here][1x].*
 
 
 Installing
@@ -49,7 +53,7 @@ Copyright 2013, Rowan Manning
 Dual licensed under the [MIT][mit] license.
 
 
-
+[docs]: http://frag.rowanmanning.co.uk/
 [1x]: https://github.com/rowanmanning/frag/tree/1.x
 [component]: https://github.com/component/component
 [make]: http://gnuwin32.sourceforge.net/packages/make.htm
