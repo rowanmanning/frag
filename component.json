@@ -15,9 +15,6 @@
     },
 
     "styles": [
-        "build/default/frag-default.css",
-        "build/default/frag-default.oldie.css",
-        "build/legacy/frag-legacy.css",
-        "build/legacy/frag-legacy.oldie.css"
+        "build/default/frag-default.css"
     ]
 }
