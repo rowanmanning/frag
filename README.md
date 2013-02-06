@@ -19,6 +19,12 @@ You can use Frag in your project by installing it through [Component][component]
 You can also use frag without a package manager just by including `build/<grid>/frag-<grid>.css` in your code. If you already use Sass for your project or site then you can `@import` the Sass source files directly – this allows you to customize the grid spacing and break-points.
 
 
+Documentation
+-------------
+
+Read the full documentation and see examples on the [Frag website](docs).
+
+
 Development
 -----------
 
