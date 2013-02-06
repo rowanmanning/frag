@@ -58,7 +58,7 @@ License
 -------
 
 Copyright 2013, Rowan Manning  
-Dual licensed under the [MIT][mit] license.
+Licensed under the [MIT][mit] license.
 
 
 [docs]: http://frag.rowanmanning.co.uk/
