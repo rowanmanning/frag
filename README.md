@@ -1,8 +1,8 @@
 
-Frag
-====
+Frag 1.x
+========
 
-Frag is a fluid, responsive, friendly, simple grid system for CSS written in LESS and Sass.
+Frag is a fluid, responsive, friendly, simple grid system for CSS written in LESS and Sass. A [demo is available here][demo].
 
 
 Browser Support
@@ -194,6 +194,7 @@ Dual licensed under the [MIT][mit] or [GPL Version 2][gpl2] licenses.
 
 
 [bower]: http://twitter.github.com/bower/
+[demo]: http://frag.rowanmanning.co.uk/1.x/
 [gpl2]: http://opensource.org/licenses/gpl-2.0.php
 [mit]: http://opensource.org/licenses/mit-license.php
 [node]: http://nodejs.org/
