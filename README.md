@@ -5,8 +5,10 @@ Frag (2.x Alpha)
 Frag is a fluid, responsive, friendly, simple grid system for CSS written in Sass. [Read the documentation here](docs).
 
 **Current Version:** *2.0.0-alpha*  
-**Full Support (testing in progress):** *Android Browser 2.2–4.2, Firefox 3.6, Firefox 4–16, Google Chrome 14–23, Internet Explorer 8–10, Mobile Safari iOS 4–6, Opera 12.10, Safari 5–6*  
-**Degraded Support:** *Internet Explorer 6–7*
+**Full Support (testing in progress):** *Android Browser 2.2–4.2, Firefox 3.6, Firefox 4–16, Google Chrome 14–23, Internet Explorer 9–10, Mobile Safari iOS 4–6, Opera 12.10, Safari 5–6*  
+**Degraded Support\*:** *Internet Explorer 6–8*
+
+*\* IE 6–8 always see the mobile view; IE 6–7 loses functionality but is still presented acceptably*
 
 *Note: If you're looking for Frag 1.x, it's [available here][1x].*
 
