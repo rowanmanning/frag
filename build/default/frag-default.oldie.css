@@ -12,58 +12,58 @@
   width: 980px;
 }
 
-.c-1 {
+.ca-1 {
   width: 41px;
 }
 
-.c-2 {
+.ca-2 {
   width: 122px;
 }
 
-.c-3 {
+.ca-3 {
   width: 203px;
 }
 
-.c-4 {
+.ca-4 {
   width: 284px;
 }
 
-.c-5 {
+.ca-5 {
   width: 365px;
 }
 
-.c-6 {
+.ca-6 {
   width: 446px;
 }
 
-.c-7 {
+.ca-7 {
   width: 527px;
 }
 
-.c-8 {
+.ca-8 {
   width: 608px;
 }
 
-.c-9 {
+.ca-9 {
   width: 689px;
 }
 
-.c-10 {
+.ca-10 {
   width: 770px;
 }
 
-.c-11 {
+.ca-11 {
   width: 851px;
 }
 
-.c-12 {
+.ca-12 {
   width: 932px;
 }
 
 .grid .grid {
   width: auto;
 }
-.grid .grid .c-1, .grid .grid .c-2, .grid .grid .c-3, .grid .grid .c-4, .grid .grid .c-5, .grid .grid .c-6, .grid .grid .c-7, .grid .grid .c-8, .grid .grid .c-9, .grid .grid .c-10, .grid .grid .c-11, .grid .grid .c-12 {
+.grid .grid .ca-1, .grid .grid .ca-2, .grid .grid .ca-3, .grid .grid .ca-4, .grid .grid .ca-5, .grid .grid .ca-6, .grid .grid .ca-7, .grid .grid .ca-8, .grid .grid .ca-9, .grid .grid .ca-10, .grid .grid .ca-11, .grid .grid .ca-12 {
   width: auto;
   float: none;
 }

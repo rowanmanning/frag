@@ -14,7 +14,7 @@ $frag-gutter-width: 40px !default;
 @include frag-oldie(
     $class: "grid",
     $max-width: $frag-max-width,
-    $col-prefix: "c-",
+    $col-prefix: "ca-",
     $count: $frag-column-count,
     $gutter: $frag-gutter-width
 );

@@ -40,136 +40,71 @@
   padding-right: 0;
 }
 
-.c-1 {
+.ca-1 {
   width: 8.33333%;
 }
 
-.c-2 {
+.ca-2 {
   width: 16.66667%;
 }
 
-.c-3 {
+.ca-3 {
   width: 25%;
 }
 
-.c-4 {
+.ca-4 {
   width: 33.33333%;
 }
 
-.c-5 {
+.ca-5 {
   width: 41.66667%;
 }
 
-.c-6 {
+.ca-6 {
   width: 50%;
 }
 
-.c-7 {
+.ca-7 {
   width: 58.33333%;
 }
 
-.c-8 {
+.ca-8 {
   width: 66.66667%;
 }
 
-.c-9 {
+.ca-9 {
   width: 75%;
 }
 
-.c-10 {
+.ca-10 {
   width: 83.33333%;
 }
 
-.c-11 {
+.ca-11 {
   width: 91.66667%;
 }
 
-.c-12 {
+.ca-12 {
   width: 100%;
 }
 
-.c-hide {
+.ca-hide {
   display: none;
 }
 
-.c-show {
+.ca-show {
   display: block;
 }
 
-.c-clear {
+.ca-clear {
   clear: left;
 }
 
-.c-unclear {
+.ca-unclear {
   clear: none;
 }
 
 @media all and (min-width: 680px) {
-  .ca-1 {
-    width: 8.33333%;
-  }
-
-  .ca-2 {
-    width: 16.66667%;
-  }
-
-  .ca-3 {
-    width: 25%;
-  }
-
-  .ca-4 {
-    width: 33.33333%;
-  }
-
-  .ca-5 {
-    width: 41.66667%;
-  }
-
-  .ca-6 {
-    width: 50%;
-  }
-
-  .ca-7 {
-    width: 58.33333%;
-  }
-
-  .ca-8 {
-    width: 66.66667%;
-  }
-
-  .ca-9 {
-    width: 75%;
-  }
-
-  .ca-10 {
-    width: 83.33333%;
-  }
-
-  .ca-11 {
-    width: 91.66667%;
-  }
-
-  .ca-12 {
-    width: 100%;
-  }
-
-  .ca-hide {
-    display: none;
-  }
-
-  .ca-show {
-    display: block;
-  }
-
-  .ca-clear {
-    clear: left;
-  }
-
-  .ca-unclear {
-    clear: none;
-  }
-}
-@media all and (min-width: 1100px) {
   .cb-1 {
     width: 8.33333%;
   }
@@ -231,6 +166,71 @@
   }
 
   .cb-unclear {
+    clear: none;
+  }
+}
+@media all and (min-width: 1100px) {
+  .cc-1 {
+    width: 8.33333%;
+  }
+
+  .cc-2 {
+    width: 16.66667%;
+  }
+
+  .cc-3 {
+    width: 25%;
+  }
+
+  .cc-4 {
+    width: 33.33333%;
+  }
+
+  .cc-5 {
+    width: 41.66667%;
+  }
+
+  .cc-6 {
+    width: 50%;
+  }
+
+  .cc-7 {
+    width: 58.33333%;
+  }
+
+  .cc-8 {
+    width: 66.66667%;
+  }
+
+  .cc-9 {
+    width: 75%;
+  }
+
+  .cc-10 {
+    width: 83.33333%;
+  }
+
+  .cc-11 {
+    width: 91.66667%;
+  }
+
+  .cc-12 {
+    width: 100%;
+  }
+
+  .cc-hide {
+    display: none;
+  }
+
+  .cc-show {
+    display: block;
+  }
+
+  .cc-clear {
+    clear: left;
+  }
+
+  .cc-unclear {
     clear: none;
   }
 }
