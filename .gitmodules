@@ -1,0 +1,3 @@
+[submodule "style/_source/vendor/rowanmanning/frag"]
+	path = style/_source/vendor/rowanmanning/frag
+	url = git://github.com/rowanmanning/frag.git

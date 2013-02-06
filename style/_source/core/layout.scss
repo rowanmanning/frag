@@ -1,0 +1,13 @@
+// core/layout
+
+// Core container styles
+.content {
+    @include rem('padding-top', 60px);
+}
+
+// Additional grid styles
+.grid {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}

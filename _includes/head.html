@@ -1,0 +1,33 @@
+
+<!-- Page meta-information -->
+<meta charset="utf-8"/>
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}"/>
+<link rel="author" href="http://rowanmanning.co.uk/"/>
+{% if page.noindex %}<meta name="robots" content="noindex"/>{% endif %}
+
+<!-- Site links -->
+<link rel="canonical" href="http://{{ site.host }}{{ page.url | replace:'index.html','' }}"/>
+<link rel="icon" href="/favicon.png" type="image/png"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+
+<!-- Styles -->
+<meta name="viewport" content="width=device-width"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round"/>
+<link rel="stylesheet" href="/style/site.min.css"/>
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/style/site.oldie.min.css"/><![endif]-->
+
+<!-- Analytics and webmaster tools -->
+<script>
+    if (/^localhost/.test(document.location.host) === false) {
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', '{{ site.ga }}']);
+        _gaq.push(['_setDomainName', '{{ site.host }}']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    }
+</script>
