@@ -2,7 +2,7 @@
 Frag (2.x Beta)
 ===============
 
-Frag is a fluid, responsive, mobile-first, simple grid system for CSS written in Sass. [Read the documentation here](docs).
+Frag is a fluid, responsive, mobile-first, simple grid system for CSS written in Sass. [Read the documentation here][docs].
 
 **Current Version:** *2.0.0-beta*  
 **Full Support (testing in progress):** *Android Browser 2.2–4.2, Firefox 3.6, Firefox 4–16, Google Chrome 14–23, Internet Explorer 9–10, Mobile Safari iOS 4–6, Opera 12.10, Safari 5–6*  
@@ -24,7 +24,7 @@ You can also use frag without a package manager just by including `build/<grid>/
 Documentation
 -------------
 
-Read the full documentation and see examples on the [Frag website](docs).
+Read the full documentation and see examples on the [Frag website][docs].
 
 
 Development
