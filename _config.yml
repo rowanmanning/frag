@@ -12,7 +12,8 @@ server: true
 
 # Site details
 lang: en-GB
-host: frag.rowanmanning.co.uk
+host: frag.rowanmanning.com
+tld: rowanmanning.com
 
 # Author details
 author:
