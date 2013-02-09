@@ -782,18 +782,10 @@ table {
 }
 
 .sw3 {
-  background-color: #ccaaee;
-}
-
-.sw4 {
-  background-color: #7f629c;
-}
-
-.sw5 {
   background-color: #99ccff;
 }
 
-.sw6 {
+.sw4 {
   background-color: #4781ba;
 }
 
@@ -809,11 +801,11 @@ body:before, .wrapper:before {
 }
 
 body:before {
-  background-color: #7f629c;
+  background-color: #4781ba;
 }
 
 .wrapper:before {
-  background-color: #ccaaee;
+  background-color: #99ccff;
 }
 
 .content {
@@ -1024,11 +1016,11 @@ hr {
 }
 
 ::-moz-selection {
-  background: #7f629c;
+  background: #4781ba;
   color: #fff;
 }
 
 ::selection {
-  background: #7f629c;
+  background: #4781ba;
   color: #fff;
 }

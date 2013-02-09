@@ -14,10 +14,10 @@ html {
 body:before {
     @extend %before-bar;
     @extend %noisy;
-    background-color: $c-lilac-dk;
+    background-color: $c-blue-dk;
 }
 .wrapper:before {
     @extend %before-bar;
     @extend %noisy;
-    background-color: $c-lilac;
+    background-color: $c-blue;
 }
