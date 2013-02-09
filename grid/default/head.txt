@@ -4,6 +4,6 @@
  * Frag is a fluid, responsive, friendly, simple grid system for
  * CSS written in Sass. http://frag.rowanmanning.com/
  *
- * Copyright 2013, Rowan Manning
- * Dual licensed under the MIT license.
+ * Copyright 2013, Rowan Manning.
+ * Licensed under the MIT license.
  */
