@@ -11,7 +11,7 @@ $frag-break-mobile: 640px !default;
 
 // Columns and gutters
 $frag-column-count: 12 !default;
-$frag-gutter-width: 40px !default;
+$frag-gutter-width: 20px !default;
 
 // Create grid class
 @include frag-grid(

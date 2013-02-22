@@ -1,6 +1,6 @@
 
 // Define a grid class
-@mixin frag-oldie ($class, $max-width, $col-prefix, $count, $gutter: 40px) {
+@mixin frag-oldie ($class, $max-width, $col-prefix, $count, $gutter: 20px) {
 
     // Grid
     .#{$class} {
@@ -11,7 +11,7 @@
     @for $i from 1 through $count {
         .#{$col-prefix}#{$i} {
             $single-col-width: floor($max-width / $count);
-            width: ($single-col-width * $i) - $gutter;
+            width: ($single-col-width * $i) - ($gutter * 2);
         }
     }
 
