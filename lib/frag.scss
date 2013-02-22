@@ -54,8 +54,17 @@
 
     // Loop columns and provide individual widths
     @for $i from 1 through $count {
+        $width: (100% / $count) * $i;
         .#{$prefix}#{$i} {
-            width: (100% / $count) * $i;
+            width: $width;
+        }
+        .#{$prefix}push-#{$i} {
+            position: relative;
+            left: $width;
+        }
+        .#{$prefix}pull-#{$i} {
+            position: relative;
+            left: -$width;
         }
     }
 

@@ -48,48 +48,168 @@
   width: 8.33333%;
 }
 
+.dsk-push-1 {
+  position: relative;
+  left: 8.33333%;
+}
+
+.dsk-pull-1 {
+  position: relative;
+  left: -8.33333%;
+}
+
 .dsk-2 {
   width: 16.66667%;
+}
+
+.dsk-push-2 {
+  position: relative;
+  left: 16.66667%;
+}
+
+.dsk-pull-2 {
+  position: relative;
+  left: -16.66667%;
 }
 
 .dsk-3 {
   width: 25%;
 }
 
+.dsk-push-3 {
+  position: relative;
+  left: 25%;
+}
+
+.dsk-pull-3 {
+  position: relative;
+  left: -25%;
+}
+
 .dsk-4 {
   width: 33.33333%;
+}
+
+.dsk-push-4 {
+  position: relative;
+  left: 33.33333%;
+}
+
+.dsk-pull-4 {
+  position: relative;
+  left: -33.33333%;
 }
 
 .dsk-5 {
   width: 41.66667%;
 }
 
+.dsk-push-5 {
+  position: relative;
+  left: 41.66667%;
+}
+
+.dsk-pull-5 {
+  position: relative;
+  left: -41.66667%;
+}
+
 .dsk-6 {
   width: 50%;
+}
+
+.dsk-push-6 {
+  position: relative;
+  left: 50%;
+}
+
+.dsk-pull-6 {
+  position: relative;
+  left: -50%;
 }
 
 .dsk-7 {
   width: 58.33333%;
 }
 
+.dsk-push-7 {
+  position: relative;
+  left: 58.33333%;
+}
+
+.dsk-pull-7 {
+  position: relative;
+  left: -58.33333%;
+}
+
 .dsk-8 {
   width: 66.66667%;
+}
+
+.dsk-push-8 {
+  position: relative;
+  left: 66.66667%;
+}
+
+.dsk-pull-8 {
+  position: relative;
+  left: -66.66667%;
 }
 
 .dsk-9 {
   width: 75%;
 }
 
+.dsk-push-9 {
+  position: relative;
+  left: 75%;
+}
+
+.dsk-pull-9 {
+  position: relative;
+  left: -75%;
+}
+
 .dsk-10 {
   width: 83.33333%;
+}
+
+.dsk-push-10 {
+  position: relative;
+  left: 83.33333%;
+}
+
+.dsk-pull-10 {
+  position: relative;
+  left: -83.33333%;
 }
 
 .dsk-11 {
   width: 91.66667%;
 }
 
+.dsk-push-11 {
+  position: relative;
+  left: 91.66667%;
+}
+
+.dsk-pull-11 {
+  position: relative;
+  left: -91.66667%;
+}
+
 .dsk-12 {
   width: 100%;
+}
+
+.dsk-push-12 {
+  position: relative;
+  left: 100%;
+}
+
+.dsk-pull-12 {
+  position: relative;
+  left: -100%;
 }
 
 .dsk-hide {
@@ -117,48 +237,168 @@
     width: 8.33333%;
   }
 
+  .tab-push-1 {
+    position: relative;
+    left: 8.33333%;
+  }
+
+  .tab-pull-1 {
+    position: relative;
+    left: -8.33333%;
+  }
+
   .tab-2 {
     width: 16.66667%;
+  }
+
+  .tab-push-2 {
+    position: relative;
+    left: 16.66667%;
+  }
+
+  .tab-pull-2 {
+    position: relative;
+    left: -16.66667%;
   }
 
   .tab-3 {
     width: 25%;
   }
 
+  .tab-push-3 {
+    position: relative;
+    left: 25%;
+  }
+
+  .tab-pull-3 {
+    position: relative;
+    left: -25%;
+  }
+
   .tab-4 {
     width: 33.33333%;
+  }
+
+  .tab-push-4 {
+    position: relative;
+    left: 33.33333%;
+  }
+
+  .tab-pull-4 {
+    position: relative;
+    left: -33.33333%;
   }
 
   .tab-5 {
     width: 41.66667%;
   }
 
+  .tab-push-5 {
+    position: relative;
+    left: 41.66667%;
+  }
+
+  .tab-pull-5 {
+    position: relative;
+    left: -41.66667%;
+  }
+
   .tab-6 {
     width: 50%;
+  }
+
+  .tab-push-6 {
+    position: relative;
+    left: 50%;
+  }
+
+  .tab-pull-6 {
+    position: relative;
+    left: -50%;
   }
 
   .tab-7 {
     width: 58.33333%;
   }
 
+  .tab-push-7 {
+    position: relative;
+    left: 58.33333%;
+  }
+
+  .tab-pull-7 {
+    position: relative;
+    left: -58.33333%;
+  }
+
   .tab-8 {
     width: 66.66667%;
+  }
+
+  .tab-push-8 {
+    position: relative;
+    left: 66.66667%;
+  }
+
+  .tab-pull-8 {
+    position: relative;
+    left: -66.66667%;
   }
 
   .tab-9 {
     width: 75%;
   }
 
+  .tab-push-9 {
+    position: relative;
+    left: 75%;
+  }
+
+  .tab-pull-9 {
+    position: relative;
+    left: -75%;
+  }
+
   .tab-10 {
     width: 83.33333%;
+  }
+
+  .tab-push-10 {
+    position: relative;
+    left: 83.33333%;
+  }
+
+  .tab-pull-10 {
+    position: relative;
+    left: -83.33333%;
   }
 
   .tab-11 {
     width: 91.66667%;
   }
 
+  .tab-push-11 {
+    position: relative;
+    left: 91.66667%;
+  }
+
+  .tab-pull-11 {
+    position: relative;
+    left: -91.66667%;
+  }
+
   .tab-12 {
     width: 100%;
+  }
+
+  .tab-push-12 {
+    position: relative;
+    left: 100%;
+  }
+
+  .tab-pull-12 {
+    position: relative;
+    left: -100%;
   }
 
   .tab-hide {
@@ -186,48 +426,168 @@
     width: 8.33333%;
   }
 
+  .mob-push-1 {
+    position: relative;
+    left: 8.33333%;
+  }
+
+  .mob-pull-1 {
+    position: relative;
+    left: -8.33333%;
+  }
+
   .mob-2 {
     width: 16.66667%;
+  }
+
+  .mob-push-2 {
+    position: relative;
+    left: 16.66667%;
+  }
+
+  .mob-pull-2 {
+    position: relative;
+    left: -16.66667%;
   }
 
   .mob-3 {
     width: 25%;
   }
 
+  .mob-push-3 {
+    position: relative;
+    left: 25%;
+  }
+
+  .mob-pull-3 {
+    position: relative;
+    left: -25%;
+  }
+
   .mob-4 {
     width: 33.33333%;
+  }
+
+  .mob-push-4 {
+    position: relative;
+    left: 33.33333%;
+  }
+
+  .mob-pull-4 {
+    position: relative;
+    left: -33.33333%;
   }
 
   .mob-5 {
     width: 41.66667%;
   }
 
+  .mob-push-5 {
+    position: relative;
+    left: 41.66667%;
+  }
+
+  .mob-pull-5 {
+    position: relative;
+    left: -41.66667%;
+  }
+
   .mob-6 {
     width: 50%;
+  }
+
+  .mob-push-6 {
+    position: relative;
+    left: 50%;
+  }
+
+  .mob-pull-6 {
+    position: relative;
+    left: -50%;
   }
 
   .mob-7 {
     width: 58.33333%;
   }
 
+  .mob-push-7 {
+    position: relative;
+    left: 58.33333%;
+  }
+
+  .mob-pull-7 {
+    position: relative;
+    left: -58.33333%;
+  }
+
   .mob-8 {
     width: 66.66667%;
+  }
+
+  .mob-push-8 {
+    position: relative;
+    left: 66.66667%;
+  }
+
+  .mob-pull-8 {
+    position: relative;
+    left: -66.66667%;
   }
 
   .mob-9 {
     width: 75%;
   }
 
+  .mob-push-9 {
+    position: relative;
+    left: 75%;
+  }
+
+  .mob-pull-9 {
+    position: relative;
+    left: -75%;
+  }
+
   .mob-10 {
     width: 83.33333%;
+  }
+
+  .mob-push-10 {
+    position: relative;
+    left: 83.33333%;
+  }
+
+  .mob-pull-10 {
+    position: relative;
+    left: -83.33333%;
   }
 
   .mob-11 {
     width: 91.66667%;
   }
 
+  .mob-push-11 {
+    position: relative;
+    left: 91.66667%;
+  }
+
+  .mob-pull-11 {
+    position: relative;
+    left: -91.66667%;
+  }
+
   .mob-12 {
     width: 100%;
+  }
+
+  .mob-push-12 {
+    position: relative;
+    left: 100%;
+  }
+
+  .mob-pull-12 {
+    position: relative;
+    left: -100%;
   }
 
   .mob-hide {
