@@ -37,6 +37,9 @@
         padding-left: $gutter;
         padding-right: $gutter;
     }
+    [dir=rtl] .#{$col-class} {
+        float: right;
+    }
 
     // Gutterless column
     .#{$col-class}-degutter {
@@ -72,6 +75,9 @@
     // Column clearing
     .#{$prefix}clear {
         clear: left;
+    }
+    [dir=rtl] .#{$prefix}clear {
+        clear: right;
     }
     .#{$prefix}unclear {
         clear: none;

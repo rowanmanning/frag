@@ -35,6 +35,10 @@
   padding-right: 20px;
 }
 
+[dir=rtl] .col {
+  float: right;
+}
+
 .col-degutter {
   padding-left: 0;
   padding-right: 0;
@@ -98,6 +102,10 @@
 
 .dsk-clear {
   clear: left;
+}
+
+[dir=rtl] .dsk-clear {
+  clear: right;
 }
 
 .dsk-unclear {
@@ -165,6 +173,10 @@
     clear: left;
   }
 
+  [dir=rtl] .tab-clear {
+    clear: right;
+  }
+
   .tab-unclear {
     clear: none;
   }
@@ -228,6 +240,10 @@
 
   .mob-clear {
     clear: left;
+  }
+
+  [dir=rtl] .mob-clear {
+    clear: right;
   }
 
   .mob-unclear {
