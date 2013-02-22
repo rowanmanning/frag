@@ -6,8 +6,8 @@
 $frag-max-width: 1200px !default;
 
 // Break-points
-$frag-break-bravo: 680px !default;
-$frag-break-charlie: 1100px !default;
+$frag-break-tablet: 1000px !default;
+$frag-break-mobile: 640px !default;
 
 // Columns and gutters
 $frag-column-count: 12 !default;
@@ -23,43 +23,43 @@ $frag-gutter-width: 40px !default;
 
 // Create column classes
 @include frag-cols(
-    $prefix: "ca-",
+    $prefix: "dsk-",
     $count: $frag-column-count
 );
 
 // Create utility classes
 @include frag-util(
-    $prefix: "ca-"
+    $prefix: "dsk-"
 );
 
-// Break-point bravo
-@media all and (min-width: $frag-break-bravo) {
+// Tablet break-point
+@media all and (max-width: $frag-break-tablet) {
 
     // Create column classes
     @include frag-cols(
-        $prefix: "cb-",
+        $prefix: "tab-",
         $count: $frag-column-count
     );
 
     // Create utility classes
     @include frag-util(
-        $prefix: "cb-"
+        $prefix: "tab-"
     );
 
 }
 
-// Break-point charlie
-@media all and (min-width: $frag-break-charlie) {
+// Mobile break-point
+@media all and (max-width: $frag-break-mobile) {
 
     // Create column classes
     @include frag-cols(
-        $prefix: "cc-",
+        $prefix: "mob-",
         $count: $frag-column-count
     );
 
     // Create utility classes
     @include frag-util(
-        $prefix: "cc-"
+        $prefix: "mob-"
     );
 
 }

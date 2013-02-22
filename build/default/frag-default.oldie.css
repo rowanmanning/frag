@@ -12,58 +12,58 @@
   width: 980px;
 }
 
-.ca-1 {
+.dsk-1 {
   width: 41px;
 }
 
-.ca-2 {
+.dsk-2 {
   width: 122px;
 }
 
-.ca-3 {
+.dsk-3 {
   width: 203px;
 }
 
-.ca-4 {
+.dsk-4 {
   width: 284px;
 }
 
-.ca-5 {
+.dsk-5 {
   width: 365px;
 }
 
-.ca-6 {
+.dsk-6 {
   width: 446px;
 }
 
-.ca-7 {
+.dsk-7 {
   width: 527px;
 }
 
-.ca-8 {
+.dsk-8 {
   width: 608px;
 }
 
-.ca-9 {
+.dsk-9 {
   width: 689px;
 }
 
-.ca-10 {
+.dsk-10 {
   width: 770px;
 }
 
-.ca-11 {
+.dsk-11 {
   width: 851px;
 }
 
-.ca-12 {
+.dsk-12 {
   width: 932px;
 }
 
 .grid .grid {
   width: auto;
 }
-.grid .grid .ca-1, .grid .grid .ca-2, .grid .grid .ca-3, .grid .grid .ca-4, .grid .grid .ca-5, .grid .grid .ca-6, .grid .grid .ca-7, .grid .grid .ca-8, .grid .grid .ca-9, .grid .grid .ca-10, .grid .grid .ca-11, .grid .grid .ca-12 {
+.grid .grid .dsk-1, .grid .grid .dsk-2, .grid .grid .dsk-3, .grid .grid .dsk-4, .grid .grid .dsk-5, .grid .grid .dsk-6, .grid .grid .dsk-7, .grid .grid .dsk-8, .grid .grid .dsk-9, .grid .grid .dsk-10, .grid .grid .dsk-11, .grid .grid .dsk-12 {
   width: auto;
   float: none;
 }

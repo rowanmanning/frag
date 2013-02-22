@@ -40,197 +40,197 @@
   padding-right: 0;
 }
 
-.ca-1 {
+.dsk-1 {
   width: 8.33333%;
 }
 
-.ca-2 {
+.dsk-2 {
   width: 16.66667%;
 }
 
-.ca-3 {
+.dsk-3 {
   width: 25%;
 }
 
-.ca-4 {
+.dsk-4 {
   width: 33.33333%;
 }
 
-.ca-5 {
+.dsk-5 {
   width: 41.66667%;
 }
 
-.ca-6 {
+.dsk-6 {
   width: 50%;
 }
 
-.ca-7 {
+.dsk-7 {
   width: 58.33333%;
 }
 
-.ca-8 {
+.dsk-8 {
   width: 66.66667%;
 }
 
-.ca-9 {
+.dsk-9 {
   width: 75%;
 }
 
-.ca-10 {
+.dsk-10 {
   width: 83.33333%;
 }
 
-.ca-11 {
+.dsk-11 {
   width: 91.66667%;
 }
 
-.ca-12 {
+.dsk-12 {
   width: 100%;
 }
 
-.ca-hide {
+.dsk-hide {
   display: none;
 }
 
-.ca-show {
+.dsk-show {
   display: block;
 }
 
-.ca-clear {
+.dsk-clear {
   clear: left;
 }
 
-.ca-unclear {
+.dsk-unclear {
   clear: none;
 }
 
-@media all and (min-width: 680px) {
-  .cb-1 {
+@media all and (max-width: 1000px) {
+  .tab-1 {
     width: 8.33333%;
   }
 
-  .cb-2 {
+  .tab-2 {
     width: 16.66667%;
   }
 
-  .cb-3 {
+  .tab-3 {
     width: 25%;
   }
 
-  .cb-4 {
+  .tab-4 {
     width: 33.33333%;
   }
 
-  .cb-5 {
+  .tab-5 {
     width: 41.66667%;
   }
 
-  .cb-6 {
+  .tab-6 {
     width: 50%;
   }
 
-  .cb-7 {
+  .tab-7 {
     width: 58.33333%;
   }
 
-  .cb-8 {
+  .tab-8 {
     width: 66.66667%;
   }
 
-  .cb-9 {
+  .tab-9 {
     width: 75%;
   }
 
-  .cb-10 {
+  .tab-10 {
     width: 83.33333%;
   }
 
-  .cb-11 {
+  .tab-11 {
     width: 91.66667%;
   }
 
-  .cb-12 {
+  .tab-12 {
     width: 100%;
   }
 
-  .cb-hide {
+  .tab-hide {
     display: none;
   }
 
-  .cb-show {
+  .tab-show {
     display: block;
   }
 
-  .cb-clear {
+  .tab-clear {
     clear: left;
   }
 
-  .cb-unclear {
+  .tab-unclear {
     clear: none;
   }
 }
-@media all and (min-width: 1100px) {
-  .cc-1 {
+@media all and (max-width: 640px) {
+  .mob-1 {
     width: 8.33333%;
   }
 
-  .cc-2 {
+  .mob-2 {
     width: 16.66667%;
   }
 
-  .cc-3 {
+  .mob-3 {
     width: 25%;
   }
 
-  .cc-4 {
+  .mob-4 {
     width: 33.33333%;
   }
 
-  .cc-5 {
+  .mob-5 {
     width: 41.66667%;
   }
 
-  .cc-6 {
+  .mob-6 {
     width: 50%;
   }
 
-  .cc-7 {
+  .mob-7 {
     width: 58.33333%;
   }
 
-  .cc-8 {
+  .mob-8 {
     width: 66.66667%;
   }
 
-  .cc-9 {
+  .mob-9 {
     width: 75%;
   }
 
-  .cc-10 {
+  .mob-10 {
     width: 83.33333%;
   }
 
-  .cc-11 {
+  .mob-11 {
     width: 91.66667%;
   }
 
-  .cc-12 {
+  .mob-12 {
     width: 100%;
   }
 
-  .cc-hide {
+  .mob-hide {
     display: none;
   }
 
-  .cc-show {
+  .mob-show {
     display: block;
   }
 
-  .cc-clear {
+  .mob-clear {
     clear: left;
   }
 
-  .cc-unclear {
+  .mob-unclear {
     clear: none;
   }
 }
