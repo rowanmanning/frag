@@ -1,0 +1,13 @@
+
+// Main container styles
+.page {
+    margin-left: auto;
+    margin-right: auto;
+    @include rem('padding-top', $pigeon-type-line-height);
+    @include rem('padding-bottom', ($pigeon-type-line-height * 3));
+}
+
+// Main content styles
+.main {
+    @include rem('padding-top', ($pigeon-type-line-height * 2));
+}

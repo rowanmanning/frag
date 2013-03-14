@@ -15,6 +15,12 @@ lang: en-GB
 host: frag.rowanmanning.com
 tld: rowanmanning.com
 
+# Repo details
+repo:
+  url: https://github.com/rowanmanning/frag
+  raw: https://raw.github.com/rowanmanning/frag
+  branch: 2.x
+
 # Author details
 author:
   name: Rowan Manning

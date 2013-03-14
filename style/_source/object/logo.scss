@@ -1,0 +1,14 @@
+
+// Site logo
+.logo {
+    display: block;
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    @media all and (max-width: $frag-break-mobile) {
+        text-align: center;
+    }
+}

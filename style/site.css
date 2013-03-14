@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/*
+ * Pigeon 1.0.0
+ *
+ * Pigeon is an OOCSS framework for rapid prototyping and building
+ * smart, scalable websites. http://pigeoncss.com/
+ *
+ * Copyright 2013, Rowan Manning.
+ * Licensed under the MIT license.
+ * 
+ */
 /* normalize.css v1.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -498,6 +508,585 @@ table {
   border-spacing: 0;
 }
 
+/*
+ * Clearfix object
+ * ---------------
+ *
+ * Used to clear floats in a container.
+ *
+ *     <ul class="clearfix">
+ *         <li style="float: left;"> ... </li>
+ *         <li style="float: left;"> ... </li>
+ *     </ul>
+ */
+.clearfix, .blocklineup {
+  zoom: 1;
+}
+.clearfix:before, .blocklineup:before, .clearfix:after, .blocklineup:after {
+  display: table;
+  content: '';
+}
+.clearfix:after, .blocklineup:after {
+  clear: both;
+}
+
+/*
+ * Hide object
+ * -----------
+ *
+ * Hides an element in a way that's accessible for screen
+ * readers and search engines.
+ *
+ *     <p class="hide"> ... </p>
+ */
+.hide {
+  position: absolute;
+  left: -9999px;
+  max-width: 999px;
+  overflow: hidden;
+}
+
+/* Right-to-left support */
+[dir=rtl] .hide {
+  left: auto;
+  right: -9999px;
+}
+
+/*
+ * Shh A object
+ * ------------
+ *
+ * Used to make a link look like regular text.
+ *
+ *     <a href="..." class="shh-a"> ... </a>
+ *
+ * or
+ *
+ *     <div class="shh-a">
+ *         <a href="..."> ... </a>
+ *     </div>
+ */
+.shh-a a, a.shh-a {
+  text-decoration: none;
+}
+.shh-a a, .shh-a a:visited, a.shh-a, a.shh-a:visited {
+  color: inherit;
+  *color: #333333;
+  /* Best guess for IE 6–7 */
+}
+
+/*
+ * Blocklineup object
+ * ------------------
+ *
+ * Remove standard list styling and display list
+ * items as floated blocks. Extends the `clearfix`
+ * object.
+ *
+ *     <ul class="blocklineup">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.blocklineup {
+  padding-left: 0;
+  list-style: none;
+}
+.blocklineup > li, .blocklineup > .item {
+  float: left;
+}
+.blocklineup > li, .blocklineup > li > a, .blocklineup > .item, .blocklineup > .item > a {
+  display: block;
+}
+
+/* Right-to-left support */
+[dir=rtl] .blocklineup {
+  padding-right: 0;
+}
+[dir=rtl] .blocklineup > li, [dir=rtl] .blocklineup > .item {
+  float: right;
+}
+
+/*
+ * Lineup object
+ * -------------
+ *
+ * Remove standard list styling and display list
+ * items inline.
+ *
+ *     <ul class="lineup">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.lineup {
+  padding-left: 0;
+  list-style: none;
+}
+.lineup > li, .lineup > li > a, .lineup > .item, .lineup > .item > a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* Right-to-left support */
+[dir=rtl] .lineup {
+  padding-right: 0;
+}
+
+/*
+ * Lineup object Delimited modifier
+ * --------------------------------
+ *
+ * Add a delimiter to list items. Dependent on the
+ * Lineup object.
+ *
+ *     <ul class="lineup lineup-is-delimited">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.lineup-is-delimited > li:after, .lineup-is-delimited > .item:after {
+  content: ", ";
+}
+.lineup-is-delimited > li:last-child:after, .lineup-is-delimited > .item:last-child:after {
+  content: "";
+  display: none;
+}
+
+/*
+ * Stack object
+ * ------------
+ *
+ * Remove standard list styling and stack list items.
+ *
+ *     <ul class="stack">
+ *         <li> ... </li>
+ *         <li> ... </li>
+ *     </ul>
+ */
+.stack {
+  padding-left: 0;
+  list-style: none;
+}
+.stack > li, .stack > li > a, .stack > .item, .stack > .item > a {
+  display: block;
+}
+
+/* Right-to-left support */
+[dir=rtl] .stack {
+  padding-right: 0;
+}
+
+/*
+ * Table object
+ * ------------
+ *
+ * Style a table.
+ *
+ *     <table class="table">
+ *         ...
+ *     </table>
+ */
+.table {
+  border-bottom: 1px solid #dbc1a9;
+  border-right: 1px solid #dbc1a9;
+}
+.table th {
+  background-color: #eadbcd;
+}
+.table td, .table th {
+  border-top: 1px solid #dbc1a9;
+  border-left: 1px solid #dbc1a9;
+}
+.table tfoot td, .table tfoot th {
+  border-top: 2px solid #dbc1a9;
+}
+
+/*
+ * Table object Wide modifier
+ * --------------------------
+ *
+ * Style a table to always stretch to the full width of
+ * the containing element. Dependent on the Table object.
+ *
+ *     <table class="table table-is-wide">
+ *         ...
+ *     </table>
+ */
+.table-is-wide {
+  width: 100%;
+}
+
+/*
+ * Table object Striped modifier
+ * -----------------------------
+ *
+ * Style a table with alternating row colours.
+ * Dependent on the Table object.
+ *
+ *     <table class="table table-is-striped">
+ *         ...
+ *     </table>
+ */
+.table-is-striped tbody tr:nth-child(even) td {
+  background-color: #f8f0e7;
+}
+
+/*
+ * Cramp object
+ * ------------
+ *
+ * Remove typographic spacing from an element.
+ *
+ *     <p class="cramp"> ... </p>
+ */
+.cramp {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*
+ * Fig object
+ * ----------
+ *
+ * Floats an element to sit alongside text and adds margins
+ * to aid legibility. Extends the `space` object.
+ *
+ *     <img src="..." alt="..." class="fig"/>
+ */
+.fig {
+  margin-right: 22px;
+  margin-right: 2.2rem;
+  display: block;
+  float: left;
+}
+
+/* Right-to-left support */
+[dir=rtl] .fig {
+  margin-left: 22px;
+  margin-left: 2.2rem;
+  margin-right: 0;
+  float: right;
+}
+
+/*
+ * Fig Alt object
+ * --------------
+ *
+ * Floats an element to sit opposite text and adds margins
+ * to aid legibility. Extends the `space` object.
+ *
+ *     <img src="..." alt="..." class="fig-alt"/>
+ */
+.fig-alt {
+  margin-left: 22px;
+  margin-left: 2.2rem;
+  display: block;
+  float: right;
+}
+
+/* Right-to-left support */
+[dir=rtl] .fig-alt {
+  margin-right: 22px;
+  margin-right: 2.2rem;
+  margin-left: 0;
+  float: left;
+}
+
+/*
+ * Indent object
+ * ------------
+ *
+ * Adds standard typographic indentation to an element.
+ *
+ * This object is extended by blockquote and list elements.
+ *
+ *     <p class="indent"> ... </p>
+ */
+.indent, .quote, blockquote, ol ol, ol ul, ul ol, ul ul, dd {
+  padding-left: 22px;
+  padding-left: 2.2rem;
+}
+
+.indent-more, ol, ul {
+  padding-left: 44px;
+  padding-left: 4.4rem;
+}
+
+/* Right-to-left support */
+[dir=rtl] .indent, [dir=rtl] .quote, [dir=rtl] blockquote, [dir=rtl] ol ol, ol [dir=rtl] ol, [dir=rtl] ol ul, ol [dir=rtl] ul, [dir=rtl] ul ol, ul [dir=rtl] ol, [dir=rtl] ul ul, ul [dir=rtl] ul, [dir=rtl] dd {
+  padding-left: 0;
+  padding-right: 22px;
+  padding-right: 2.2rem;
+}
+[dir=rtl] .indent-more, [dir=rtl] ol, [dir=rtl] ul {
+  padding-left: 0;
+  padding-right: 44px;
+  padding-right: 4.4rem;
+}
+
+/*
+ * Quote object
+ * ------------
+ *
+ * Style a quote. Extends the `indent` object.
+ *
+ * This object is extended by the blockquote element.
+ *
+ *     <blockquote class="quote">
+ *         <p class="quote-body"> ... </p>
+ *         <p class="quote-attrib">Someone in <cite>Work</cite></p>
+ *     </blockquote>
+ */
+.quote, blockquote {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.quote-body, .quote-attrib {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.quote-attrib {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 20px;
+  line-height: 2rem;
+  font-style: italic;
+}
+.quote-attrib:before {
+  content: "—";
+}
+
+/*
+ * Smallprint object
+ * -----------------
+ *
+ * Reduce type size of an element to indicate small-print.
+ *
+ * This object is extended by some core
+ * typographic elements.
+ *
+ *     <p class="smallprint"> ... </p>
+ */
+.smallprint, figcaption, small, sub, sup {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 20px;
+  line-height: 2rem;
+}
+
+/*
+ * Space object
+ * ------------
+ *
+ * Adds typographic spacing to an element.
+ *
+ * This object is extended by some core
+ * typographic elements.
+ *
+ *     <div class="space"> ... </div>
+ *     <p> ... </p>
+ */
+.space, .fig, .fig-alt, p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1,
+blockquote, caption, dl, figure, ol, ul, hr, pre, table, .highlight {
+  margin-bottom: 22px;
+  margin-bottom: 2.2rem;
+}
+
+.space-more {
+  margin-bottom: 44px;
+  margin-bottom: 4.4rem;
+}
+
+/**
+ * Space Above object
+ * ------------------
+ *
+ * Adds typographic spacing to the top of an element.
+ *
+ *     <p class="space-above"> ... </p>
+ *     <p> ... </p>
+ */
+.space-above {
+  margin-top: 22px;
+  margin-top: 2.2rem;
+}
+
+.space-above-more {
+  margin-top: 44px;
+  margin-top: 4.4rem;
+}
+
+/*
+ * Typearea object
+ * ---------------
+ *
+ * Pads an element to optimize type spacing.
+ *
+ *     <div class="typearea">
+ *         <p> ... </p>
+ *         <p> ... </p>
+ *     </div>
+ */
+.typearea {
+  display: block;
+  padding-top: 22px;
+  padding-top: 2.2rem;
+}
+
+/* Base typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 22px;
+  line-height: 2.2rem;
+  color: #333333;
+}
+
+/* Standard element typography */
+p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1,
+blockquote, caption, dl, figure, ol, ul, hr, pre, table {
+  margin-top: 0;
+}
+
+/* Heading typography */
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, caption, dt, th {
+  font-family: "Varela Round", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+}
+
+h6, .h6 {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+}
+
+h5, .h5 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 26px;
+  line-height: 2.6rem;
+}
+
+h4, .h4 {
+  font-size: 25px;
+  font-size: 2.5rem;
+  line-height: 29px;
+  line-height: 2.9rem;
+}
+
+h3, .h3 {
+  font-size: 28px;
+  font-size: 2.8rem;
+  line-height: 32px;
+  line-height: 3.2rem;
+}
+
+h2, .h2 {
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 36px;
+  line-height: 3.6rem;
+}
+
+h1, .h1 {
+  font-size: 36px;
+  font-size: 3.6rem;
+  line-height: 40px;
+  line-height: 4rem;
+}
+
+/* Links */
+a {
+  color: #4781ba;
+}
+a:visited {
+  color: #7f629c;
+}
+
+/* Text-level semantics */
+cite {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ffff99;
+}
+
+q {
+  font-style: italic;
+}
+q:before {
+  content: "“";
+}
+q:after {
+  content: "”";
+}
+
+/* Horizontal rules */
+hr {
+  height: 0;
+  border: none;
+  border-top: 5px solid #eadbcd;
+  color: #eadbcd;
+}
+
+/* Selection */
+::-moz-selection {
+  background: #4781ba;
+  color: white;
+}
+
+::selection {
+  background: #4781ba;
+  color: white;
+}
+
+/* Block Quotes */
+/* Lists */
+ol ol, ol ul, ul ol, ul ul {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+  margin-bottom: 11px;
+  margin-bottom: 1.1rem;
+}
+
+/* Tables */
+table {
+  max-width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+th, td {
+  padding: 5px 9px;
+  padding:  0.5rem 0.9rem;
+}
+
+caption {
+  font-weight: bold;
+  text-align: left;
+}
+
 .grid {
   display: block;
   -webkit-box-sizing: border-box;
@@ -525,214 +1114,225 @@ table {
   padding-right: 20px;
 }
 
+[dir=rtl] .col {
+  float: right;
+}
+
 .col-degutter {
   padding-left: 0;
   padding-right: 0;
 }
 
-.ca-1 {
+.dsk-1 {
   width: 8.33333%;
 }
 
-.ca-2 {
+.dsk-2 {
   width: 16.66667%;
 }
 
-.ca-3 {
+.dsk-3 {
   width: 25%;
 }
 
-.ca-4 {
+.dsk-4 {
   width: 33.33333%;
 }
 
-.ca-5 {
+.dsk-5 {
   width: 41.66667%;
 }
 
-.ca-6 {
+.dsk-6 {
   width: 50%;
 }
 
-.ca-7 {
+.dsk-7 {
   width: 58.33333%;
 }
 
-.ca-8 {
+.dsk-8 {
   width: 66.66667%;
 }
 
-.ca-9 {
+.dsk-9 {
   width: 75%;
 }
 
-.ca-10 {
+.dsk-10 {
   width: 83.33333%;
 }
 
-.ca-11 {
+.dsk-11 {
   width: 91.66667%;
 }
 
-.ca-12 {
+.dsk-12 {
   width: 100%;
 }
 
-.ca-hide {
+.dsk-hide {
   display: none;
 }
 
-.ca-show {
+.dsk-show {
   display: block;
 }
 
-.ca-clear {
+.dsk-clear {
   clear: left;
 }
 
-.ca-unclear {
+[dir=rtl] .dsk-clear {
+  clear: right;
+}
+
+.dsk-unclear {
   clear: none;
 }
 
-@media all and (min-width: 680px) {
-  .cb-1 {
+@media all and (max-width: 1000px) {
+  .tab-1 {
     width: 8.33333%;
   }
 
-  .cb-2 {
+  .tab-2 {
     width: 16.66667%;
   }
 
-  .cb-3 {
+  .tab-3 {
     width: 25%;
   }
 
-  .cb-4 {
+  .tab-4 {
     width: 33.33333%;
   }
 
-  .cb-5 {
+  .tab-5 {
     width: 41.66667%;
   }
 
-  .cb-6 {
+  .tab-6 {
     width: 50%;
   }
 
-  .cb-7 {
+  .tab-7 {
     width: 58.33333%;
   }
 
-  .cb-8 {
+  .tab-8 {
     width: 66.66667%;
   }
 
-  .cb-9 {
+  .tab-9 {
     width: 75%;
   }
 
-  .cb-10 {
+  .tab-10 {
     width: 83.33333%;
   }
 
-  .cb-11 {
+  .tab-11 {
     width: 91.66667%;
   }
 
-  .cb-12 {
+  .tab-12 {
     width: 100%;
   }
 
-  .cb-hide {
+  .tab-hide {
     display: none;
   }
 
-  .cb-show {
+  .tab-show {
     display: block;
   }
 
-  .cb-clear {
+  .tab-clear {
     clear: left;
   }
 
-  .cb-unclear {
+  [dir=rtl] .tab-clear {
+    clear: right;
+  }
+
+  .tab-unclear {
     clear: none;
   }
 }
-@media all and (min-width: 1100px) {
-  .cc-1 {
+@media all and (max-width: 640px) {
+  .mob-1 {
     width: 8.33333%;
   }
 
-  .cc-2 {
+  .mob-2 {
     width: 16.66667%;
   }
 
-  .cc-3 {
+  .mob-3 {
     width: 25%;
   }
 
-  .cc-4 {
+  .mob-4 {
     width: 33.33333%;
   }
 
-  .cc-5 {
+  .mob-5 {
     width: 41.66667%;
   }
 
-  .cc-6 {
+  .mob-6 {
     width: 50%;
   }
 
-  .cc-7 {
+  .mob-7 {
     width: 58.33333%;
   }
 
-  .cc-8 {
+  .mob-8 {
     width: 66.66667%;
   }
 
-  .cc-9 {
+  .mob-9 {
     width: 75%;
   }
 
-  .cc-10 {
+  .mob-10 {
     width: 83.33333%;
   }
 
-  .cc-11 {
+  .mob-11 {
     width: 91.66667%;
   }
 
-  .cc-12 {
+  .mob-12 {
     width: 100%;
   }
 
-  .cc-hide {
+  .mob-hide {
     display: none;
   }
 
-  .cc-show {
+  .mob-show {
     display: block;
   }
 
-  .cc-clear {
+  .mob-clear {
     clear: left;
   }
 
-  .cc-unclear {
+  [dir=rtl] .mob-clear {
+    clear: right;
+  }
+
+  .mob-unclear {
     clear: none;
   }
 }
-.clearfix {
-  zoom: 1;
-}
-.clearfix:before, .clearfix:after {
-  display: table;
-  content: '';
-}
-.clearfix:after {
-  clear: both;
+.css-object {
+  margin-top: 66px;
+  margin-top: 6.6rem;
+  border-top: 5px dotted #eadbcd;
 }
 
 .forkme {
@@ -744,18 +1344,65 @@ table {
   display: block;
 }
 .forkme img {
-  width: 120px;
-  height: 120px;
+  width: 149px;
+  height: 149px;
 }
-@media all and (min-width: 680px) {
+@media all and (max-width: 1000px) {
   .forkme img {
-    width: 149px;
-    height: 149px;
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.logo {
+  display: block;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+@media all and (max-width: 640px) {
+  .logo {
+    text-align: center;
+  }
+}
+
+.navigation li {
+  margin-bottom: 11px;
+  margin-bottom: 1.1rem;
+}
+.navigation a, .navigation a:visited {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 11px;
+  padding-top: 1.1rem;
+  padding-bottom: 11px;
+  padding-bottom: 1.1rem;
+  background-color: #f9eee4;
+  border-left: 5px solid #4781ba;
+  color: #333333;
+  text-decoration: none;
+}
+.navigation a:hover {
+  background-color: #99ccff;
+}
+@media all and (max-width: 640px) {
+  .navigation {
+    text-align: center;
+  }
+  .navigation a {
+    border-left: none;
   }
 }
 
 .noisy, .swatch, html, body:before, .wrapper:before {
   background-image: url("assets/100-65-5.png");
+}
+
+.section {
+  margin-top: 88px;
+  margin-top: 8.8rem;
+  border-top: 5px solid #eadbcd;
 }
 
 .swatches {
@@ -789,6 +1436,56 @@ table {
   background-color: #4781ba;
 }
 
+pre, code {
+  font-family: Consolas, "Lucida Console", Monaco, monospace;
+}
+
+code {
+  padding: 0 4px;
+  background: #f0e7de;
+  border: 1px solid #eadbcd;
+}
+
+.highlight {
+  padding: 22px;
+  padding: 2.2rem;
+  color: #dedede;
+  background-color: #333;
+  border: 10px solid #eadbcd;
+}
+
+.highlight pre {
+  margin-bottom: 0;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.highlight .html .nt, .highlight .html .na {
+  color: #99ccff;
+}
+.highlight .html .s {
+  color: #f00;
+}
+
+.highlight .scss .na, .highlight .scss .k {
+  color: #99ccff;
+}
+.highlight .scss .s, .highlight .scss .s2, .highlight .scss .mi, .highlight .scss .kt {
+  color: #f00;
+}
+
+.footer {
+  padding-top: 88px;
+  padding-top: 8.8rem;
+}
+.footer, .footer a, .footer a:visited {
+  color: #747474;
+}
+
 html {
   min-height: 100%;
   background-color: #fffaf5;
@@ -808,219 +1505,26 @@ body:before {
   background-color: #99ccff;
 }
 
-.content {
-  padding-top: 60px;
-  padding-top: 6rem;
-}
-
-.grid {
-  max-width: 980px;
+.page {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 22px;
+  padding-top: 2.2rem;
+  padding-bottom: 66px;
+  padding-bottom: 6.6rem;
 }
 
-html {
-  font-size: 62.5%;
+.main {
+  padding-top: 44px;
+  padding-top: 4.4rem;
 }
 
-body {
-  font-family: "Varela Round", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 26px;
-  line-height: 2.6rem;
-  color: #333333;
-}
-
-.secondary {
-  color: #747474;
-}
-
-.flow, p, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, blockquote, dl, figure, ol, ul, hr, pre, table {
-  margin-top: 0;
-  margin-bottom: 26px;
-  margin-bottom: 2.6rem;
-}
-
-.interrupt {
-  margin-bottom: 0;
-}
-
-.topper {
-  margin-top: 52px;
-  margin-top: 5.2rem;
-}
-
-.center {
-  text-align: center;
-}
-
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, dt, th {
-  color: #333333;
+dt, th {
   font-weight: normal;
 }
 
-h6, .h6, dt, th {
-  font-size: 22px;
-  font-size: 2.2rem;
-}
-
-h5, .h5 {
-  font-size: 26px;
-  font-size: 2.6rem;
-}
-
-h4, .h4 {
-  font-size: 30px;
-  font-size: 3rem;
-}
-
-h3, .h3, h2, .h2, h1, .h1 {
-  line-height: 52px;
-  line-height: 5.2rem;
-}
-
-h3, .h3 {
-  font-size: 34px;
-  font-size: 3.4rem;
-}
-
-h2, .h2 {
-  font-size: 38px;
-  font-size: 3.8rem;
-}
-
-h1, .h1 {
-  font-size: 42px;
-  font-size: 4.2rem;
-}
-
-figcaption, small, sub, sup {
-  font-size: 16px;
-  font-size: 1.6rem;
-}
-
-a {
-  color: #4781ba;
-}
-a:active {
-  color: #99ccff;
-}
-a:visited {
-  color: #315b83;
-}
-
-.secondary a {
-  color: #747474;
-}
-
-ol, ul {
-  padding-left: 36px;
-}
-
-ol p, ol h6, ol .h6, ol h5, ol .h5, ol h4, ol .h4, ol h3, ol .h3, ol h2, ol .h2, ol h1, ol .h1, ol blockquote, ol dl, ol figure, ol ol, ol ul, ol hr, ol pre, ol table, ul p, ul h6, ul .h6, ul h5, ul .h5, ul h4, ul .h4, ul h3, ul .h3, ul h2, ul .h2, ul h1, ul .h1, ul blockquote, ul dl, ul figure, ul ol, ul ul, ul hr, ul pre, ul table, dl p, dl h6, dl .h6, dl h5, dl .h5, dl h4, dl .h4, dl h3, dl .h3, dl h2, dl .h2, dl h1, dl .h1, dl blockquote, dl dl, dl figure, dl ol, dl ul, dl hr, dl pre, dl table {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-dt {
-  font-weight: bold;
-}
-
-dd {
-  margin-left: 0;
-  margin-bottom: 12px;
-  padding-left: 18px;
-}
-
-blockquote {
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0 0 0 18px;
-  border-left: 5px solid #eadbcd;
-}
-blockquote p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-blockquote small {
-  font-style: italic;
-}
-blockquote small:before {
-  content: "—";
-}
-
-q {
-  font-style: italic;
-}
-q:before {
-  content: "“";
-}
-q:after {
-  content: "”";
-}
-
-pre, code {
-  font-family: Consolas, "Lucida Console", Monaco, monospace;
-}
-
-code {
-  padding: 0 4px;
-  background: #f0e7de;
-  border: 1px solid #eadbcd;
-}
-
-pre code {
-  padding: 8px;
-  display: block;
-  background: #3f3f3f;
-  color: #dcdcdc;
-  border: 5px solid #eadbcd;
-}
-
-table {
-  width: 100%;
-}
-
-thead {
-  border-top: 1px solid #eadbcd;
-}
-
-tr {
-  border-left: 1px solid #eadbcd;
-}
-
-th {
-  background: #eadbcd;
-  text-align: left;
-}
-
-th, td {
-  padding: 4px 8px;
-  border-bottom: 1px solid #eadbcd;
-  border-right: 1px solid #eadbcd;
-}
-tr:nth-child(2n) th, tr:nth-child(2n) td {
-  background: #fff;
-}
-
-mark {
-  background: #ff9;
-}
-
-hr {
-  height: 0;
-  border: none;
-  border-top: 5px solid #eadbcd;
-  color: #eadbcd;
-}
-
-::-moz-selection {
-  background: #4781ba;
-  color: #fff;
-}
-
-::selection {
-  background: #4781ba;
-  color: #fff;
+@media all and (max-width: 640px) {
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    text-align: center;
+  }
 }

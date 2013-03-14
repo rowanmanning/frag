@@ -1,13 +1,13 @@
 
-<div class="grid topper center footer" role="contentinfo">
-    <div class="col ca-12">
+<p class="cramp">
+    <small>
+        Copyright &copy; {{ site.time | date: '%Y' }},
+        <a href="{{ site.author.url }}">{{ site.author.name }}</a>.
+    </small>
+</p>
 
-        <p class="secondary">
-            <small>
-                Copyright {{ site.time | date: '%Y' }},
-                <a href="{{ site.author.url }}">{{ site.author.name }}</a>.
-            </small>
-        </p>
-
-    </div>
-</div>
+<p class="cramp">
+    <small>
+        Frag is licensed under the <a href="{{ site.repo.url }}/blob/{{ site.repo.branch }}/LICENSE.md">MIT License</a>.
+    </small>
+</p>

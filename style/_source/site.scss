@@ -1,28 +1,47 @@
 
 // Variables: type
-$t-height: 18px;
-$t-lineheight: 26px;
+$t-family: Verdana, Geneva, Tahoma, sans-serif;
+$t-family-heading: "Varela Round", Verdana, Geneva, Tahoma, sans-serif;
+$t-family-mono: Consolas, "Lucida Console", Monaco, monospace;
+
+// Variables: spacing
+$gutter: 20px;
 
 // Variables: colour
 $c-cream: #fffaf5;
+$c-cream-md: #f9eee4;
 $c-cream-dk: #eadbcd;
 $c-blue: #9cf;
 $c-blue-dk: #4781ba;
 $c-grey: #747474;
 $c-grey-dk: #333;
 
+// Pigeon config
+$pigeon-selection-color: #fff;
+$pigeon-selection-color-bg: $c-blue-dk;
+$pigeon-type-face: $t-family;
+$pigeon-type-face-heading: $t-family-heading;
+$pigeon-table-color: $c-cream-dk;
+$pigeon-table-color-stripe: #f8f0e7;
+$pigeon-rule-height: 5px;
+$pigeon-rule-color: $c-cream-dk;
+
 // Vendor styles
-@import "vendor/bitmanic/rem";
-@import "vendor/necolas/normalize";
+@import "vendor/rowanmanning/pigeon/lib/pigeon";
 @import "vendor/rowanmanning/frag/grid/default/grid";
 
 // Objects
-@import "object/clear";
+@import "object/css-object";
 @import "object/forkme";
+@import "object/logo";
+@import "object/navigation";
 @import "object/noisy";
+@import "object/section";
 @import "object/swatch";
 
 // Site styles
-@import "core/glitter";
-@import "core/layout";
-@import "core/type";
+@import "site/code";
+@import "site/footer";
+@import "site/glitter";
+@import "site/layout";
+@import "site/type";

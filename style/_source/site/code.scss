@@ -1,0 +1,47 @@
+
+// Code
+pre, code {
+    font-family: $t-family-mono;
+}
+code {
+    padding: 0 4px;
+    background: #f0e7de;
+    border: 1px solid $c-cream-dk;
+}
+
+// Syntax highlighting
+.highlight {
+    @extend .space;
+    @include rem("padding", $pigeon-type-line-height);
+    color: #dedede;
+    background-color: #333;
+    border: 10px solid $c-cream-dk;
+}
+.highlight pre {
+    margin-bottom: 0;
+}
+pre code {
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+// HTML
+.highlight .html {
+    .nt, .na {
+        color: $c-blue;
+    }
+    .s {
+        color: #f00;
+    }
+}
+
+// SCSS
+.highlight .scss {
+    .na, .k {
+        color: $c-blue;
+    }
+    .s, .s2, .mi, .kt {
+        color: #f00;
+    }
+}
