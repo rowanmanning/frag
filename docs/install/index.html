@@ -1,0 +1,66 @@
+---
+title: Installation - Frag Documentation
+description: How to install and use Frag in your project, with CSS or Sass.
+layout: page
+---
+
+<h1>Installation</h1>
+
+<p>
+    You can use Frag in a couple of different ways, depending on the way your
+    site is being developed.
+</p>
+
+
+<div id="css" class="section typearea">
+    <h2>Plain CSS</h2>
+
+    <p>
+        If you're just writing vanilla CSS, then you can simply include
+        <a href="{{ site.repo.raw }}/{{ site.repo.branch }}/build/default/frag-default.css">frag-default.css</a>
+        or <a href="{{ site.repo.raw }}/{{ site.repo.branch }}/build/default/frag-default.min.css">frag-default.min.css</a>
+        in your page above your own styles. If you wish to support IE 6–8 to
+        a moderate degree, you'll also need to include
+        <a href="{{ site.repo.raw }}/{{ site.repo.branch }}/build/default/frag-default.oldie.css">frag-default.oldie.css</a> in a conditional comment.
+    </p>
+
+    {% highlight html %}
+<link rel="stylesheet" href="styles/frag-default.css" />
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="styles/frag-default.oldie.css" />
+<![endif]-->
+{% endhighlight %}
+
+</div>
+
+
+<div id="sass" class="section typearea">
+    <h2>Sass</h2>
+
+    <p>
+        If you're already using Sass with your project, then you can include Frag
+        directly. This is simple; assuming you have the Frag source code in
+        the <code>vendor/frag</code> folder:
+    </p>
+
+    {% highlight scss %}
+@import "vendor/frag/grid/default/grid";
+{% endhighlight %}
+
+    <p>
+        If you wish to customise Frag, you can do so using Sass variables. You can
+        find <a href="/docs/config/">documentation for customising Frag here</a>.
+    </p>
+
+</div>
+
+
+<div id="usage" class="section typearea">
+    <h2>Usage</h2>
+
+    <p>
+        Once you're set up, you can start using the grid provided
+        by Frag. <a href="/docs/">Read the documentation</a>.
+    </p>
+
+</div>
