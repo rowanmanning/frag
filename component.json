@@ -1,7 +1,7 @@
 {
     "name": "frag",
     "version": "2.0.0-beta.1",
-    "description": "Frag is a fluid, responsive, friendly, simple grid system for CSS written in Sass.",
+    "description": "Frag is a fluid, responsive, simple grid system for CSS written in Sass.",
     "keywords": ["css", "fluid", "grid", "mobile", "oocss", "responsive", "sass"],
     "license": "MIT",
 
@@ -15,6 +15,6 @@
     },
 
     "styles": [
-        "build/default/frag-default.css"
+        "build/frag.css"
     ]
 }
