@@ -17,18 +17,14 @@ layout: page
 
     <p>
         If you're just writing vanilla CSS, then you can simply include
-        <a href="{{ site.repo.raw }}/{{ site.repo.branch }}/build/default/frag-default.css">frag-default.css</a>
-        or <a href="{{ site.repo.raw }}/{{ site.repo.branch }}/build/default/frag-default.min.css">frag-default.min.css</a>
-        in your page above your own styles. If you wish to support IE 6–8 to
-        a moderate degree, you'll also need to include
-        <a href="{{ site.repo.raw }}/{{ site.repo.branch }}/build/default/frag-default.oldie.css">frag-default.oldie.css</a> in a conditional comment.
+        <a href="{{ site.repo.raw }}/{{ site.repo.branch }}/build/frag.css">frag.css</a>
+        or <a href="{{ site.repo.raw }}/{{ site.repo.branch }}/build/frag.min.css">frag.min.css</a>
+        in your page above your own styles. Assuming you have the Frag source code in
+        the <code>vendor/frag</code> folder:
     </p>
 
     {% highlight html %}
-<link rel="stylesheet" href="styles/frag-default.css" />
-<!--[if lte IE 8]>
-    <link rel="stylesheet" href="styles/frag-default.oldie.css" />
-<![endif]-->
+<link rel="stylesheet" href="vendor/frag/build/frag.css" />
 {% endhighlight %}
 
 </div>
@@ -44,7 +40,7 @@ layout: page
     </p>
 
     {% highlight scss %}
-@import "vendor/frag/grid/default/grid";
+@import "vendor/frag/build/frag";
 {% endhighlight %}
 
     <p>
