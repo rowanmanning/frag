@@ -1225,11 +1225,11 @@ caption {
   clear: right;
 }
 
-.dsk-unclear {
-  clear: none;
-}
-
 @media all and (max-width: 1000px) {
+  .dsk-clear {
+    clear: none;
+  }
+
   .tab-1 {
     width: 8.33333%;
   }
@@ -1293,12 +1293,12 @@ caption {
   [dir=rtl] .tab-clear {
     clear: right;
   }
-
-  .tab-unclear {
-    clear: none;
-  }
 }
 @media all and (max-width: 640px) {
+  .tab-clear {
+    clear: none;
+  }
+
   .mob-1 {
     width: 8.33333%;
   }
@@ -1362,10 +1362,6 @@ caption {
   [dir=rtl] .mob-clear {
     clear: right;
   }
-
-  .mob-unclear {
-    clear: none;
-  }
 }
 .actions li {
   margin-right: 20px;
@@ -1396,12 +1392,6 @@ caption {
 }
 .action-button:hover {
   background-color: #99ccff;
-}
-
-.css-object {
-  margin-top: 66px;
-  margin-top: 6.6rem;
-  border-top: 5px dotted #eadbcd;
 }
 
 .forkme {
@@ -1547,12 +1537,18 @@ pre code {
 .highlight .html .s {
   color: #f2b865;
 }
+.highlight .html .c {
+  color: #4781ba;
+}
 
 .highlight .scss .na, .highlight .scss .k {
   color: #99ccff;
 }
 .highlight .scss .s, .highlight .scss .s2, .highlight .scss .mi, .highlight .scss .kt {
   color: #f2b865;
+}
+.highlight .scss .c {
+  color: #4781ba;
 }
 
 .footer {

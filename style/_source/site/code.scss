@@ -34,6 +34,9 @@ pre code {
     .s {
         color: $c-orange;
     }
+    .c {
+        color: $c-blue-dk;
+    }
 }
 
 // SCSS
@@ -43,5 +46,8 @@ pre code {
     }
     .s, .s2, .mi, .kt {
         color: $c-orange;
+    }
+    .c {
+        color: $c-blue-dk;
     }
 }

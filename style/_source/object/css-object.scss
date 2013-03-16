@@ -1,6 +1,0 @@
-
-// CSS Object docs
-.css-object {
-    @include rem("margin-top", ($pigeon-type-line-height * 3));
-    border-top: 5px dotted $c-cream-dk;
-}

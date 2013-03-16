@@ -1,0 +1,171 @@
+---
+title: Frag Documentation
+description: API documentation for all of Frag's classes, and how to use the grid.
+layout: page
+---
+
+<h1>Documentation</h1>
+
+
+<div id="grid" class="section typearea">
+    <h2><a href="#grid" class="shh-a">Grid</a></h2>
+    
+    <p>
+        The <code>grid</code> class is used to wrap columns and provide a
+        maximum width for the grid.
+    </p>
+
+    <div class="css-example">
+        {% highlight html %}<div class="grid"> <!-- columns --> </div>{% endhighlight %}
+    </div>
+
+</div>
+
+
+<div id="columns" class="section typearea">
+    <h2><a href="#columns" class="shh-a">Columns</a></h2>
+    
+    <p>
+        The <code>col</code> class is used to add base column styling to an
+        element. This doesn't provide any width values, but is required for any
+        of the <a href="#column-widths">width classes</a> to work.
+    </p>
+
+    <div class="css-example">
+        {% highlight html %}<div class="grid">
+    <div class="col"> <!-- content --> </div>
+</div>{% endhighlight %}
+    </div>
+
+</div>
+
+
+<div id="column-widths" class="section typearea">
+    <h2><a href="#column-widths" class="shh-a">Column Widths</a></h2>
+    
+    <p>
+        The <code>col</code> class is not particularly useful by itself. We also
+        want to give our columns widths. This is done with <code>dsk-&lt;n&gt;</code>
+        classes. Depending on how many columns your grid has (default is 12),
+        there will be a <code>dsk-</code> prefixed class for each width:
+    </p>
+
+    <div class="css-example">
+        {% highlight html %}<div class="grid">
+    <div class="col dsk-1"> <!-- content --> </div>
+    <div class="col dsk-2"> <!-- content --> </div>
+    <div class="col dsk-3"> <!-- content --> </div>
+    <!-- etc. -->
+    <div class="col dsk-12"> <!-- content --> </div>
+</div>{% endhighlight %}
+    </div>
+
+    <p>
+        <b>Note:</b> <code>dsk</code> stands for "desktop". We'll find out about
+        columns for <a href="#responsive">tablet and mobile</a> later.
+    </p>
+
+    <p>
+        Each <code>dsk-</code> class width represents the number of column
+        widths it will span. For example, <code>dsk-1</code> spans one column
+        width so you will be able to fit twelve of these per row.
+        <code>dsk-6</code> spans six columns so you will only be able to fit two
+        of these per row:
+    </p>
+
+    <div class="css-example">
+        {% highlight html %}<!-- Two-Column Grid -->
+<div class="grid">
+    <div class="col dsk-6"> <!-- content --> </div>
+    <div class="col dsk-6"> <!-- content --> </div>
+</div>
+
+<!-- Four-Column Grid -->
+<div class="grid">
+    <div class="col dsk-3"> <!-- content --> </div>
+    <div class="col dsk-3"> <!-- content --> </div>
+    <div class="col dsk-3"> <!-- content --> </div>
+    <div class="col dsk-3"> <!-- content --> </div>
+</div>{% endhighlight %}
+    </div>
+
+</div>
+
+
+<div id="clearing" class="section typearea">
+    <h2><a href="#clearing" class="shh-a">Clearing Columns</a></h2>
+    
+    <p>
+        When a grid spans multiple rows, you'll need to clear columns in order
+        to prevent strange display issues if columns have different heights. You
+        can add a class of <code>dsk-clear</code> to the first element in each
+        row (ignoring the first row as it has nothing to clear). This means that
+        mixed-height columns display nicely.
+    </p>
+
+    <div class="css-example">
+        {% highlight html %}<div class="grid">
+    <div class="col col-6">           <!-- content --> </div>
+    <div class="col col-6">           <!-- content --> </div>
+    <div class="col col-6 col-clear"> <!-- content --> </div>
+    <div class="col col-6">           <!-- content --> </div>
+</div>{% endhighlight %}
+    </div>
+
+    <p>
+        <b>Note:</b> If you know your columns have equal heights (e.g. they
+        contain fixed height images only) then you can omit the
+        <code>dsk-clear</code> class.
+    </p>
+
+</div>
+
+
+<div id="responsive" class="section typearea">
+    <h2><a href="#responsive" class="shh-a">Going Responsive</a></h2>
+    
+    <p>
+        Frag supports multiple break-points, and you are able to specify column
+        widths for tablet and mobile. To do this, supplement your regular
+        <code>dsk-&lt;n&gt;</code> class with <code>tab-&lt;n&gt;</code> and
+        <code>mob-&lt;n&gt;</code> classes. The example below will make all
+        columns display at half width on desktop and full width on mobile.
+    </p>
+
+    <div class="css-example">
+        {% highlight html %}<div class="grid">
+    <div class="col dsk-6 mob-12"> <!-- content --> </div>
+    <div class="col dsk-6 mob-12"> <!-- content --> </div>
+    <div class="col dsk-6 mob-12"> <!-- content --> </div>
+    <div class="col dsk-6 mob-12"> <!-- content --> </div>
+</div>{% endhighlight %}
+    </div>
+
+    <p>
+        The tablet and mobile break-points have their own clear classes too:
+        <code>tab-clear</code> and <code>mob-clear</code>. These can be used
+        to provide clearing only at the specified breakpoints, catering for
+        layouts where the column height is not known.
+    </p>
+
+    <p>
+        Clear classes, by default, impact on subsequent break-points. For
+        example, <code>dsk-clear</code> will continue to be active in both
+        tablet and mobile contexts. To explicity remove a previous clear,
+        you can use the <code>dsk-unclear</code>, <code>tab-unclear</code> and
+        <code>mob-unclear</code> classes. This comes in handy for complex
+        layouts where columns switch between odd and even spans:
+    </p>
+
+    <div class="css-example">
+        {% highlight html %}<div class="grid">
+    <div class="col dsk-6 tab-4"></div>
+    <div class="col dsk-6 tab-4"></div>
+    <div class="col dsk-6 dsk-clear tab-4 tab-unclear"></div>
+    <div class="col dsk-6 tab-4 tab-clear"></div>
+    <div class="col dsk-6 dsk-clear tab-4 tab-unclear"></div>
+    <div class="col dsk-6 tab-4"></div>
+</div>{% endhighlight %}
+    </div>
+
+</div>
