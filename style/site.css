@@ -1146,6 +1146,8 @@ caption {
 .col-degutter {
   padding-left: 0;
   padding-right: 0;
+  *padding-left: 20px;
+  *padding-right: 20px;
 }
 
 /* Grid: Base columns */
@@ -1227,6 +1229,12 @@ caption {
 
 .dsk-unclear {
   clear: none;
+}
+
+.oldie-clear {
+  display: none;
+  *display: block;
+  *clear: both;
 }
 
 @media all and (max-width: 1000px) {
