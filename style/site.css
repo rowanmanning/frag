@@ -1225,11 +1225,11 @@ caption {
   clear: right;
 }
 
-@media all and (max-width: 1000px) {
-  .dsk-clear {
-    clear: none;
-  }
+.dsk-unclear {
+  clear: none;
+}
 
+@media all and (max-width: 1000px) {
   .tab-1 {
     width: 8.33333%;
   }
@@ -1293,12 +1293,12 @@ caption {
   [dir=rtl] .tab-clear {
     clear: right;
   }
-}
-@media all and (max-width: 640px) {
-  .tab-clear {
+
+  .tab-unclear {
     clear: none;
   }
-
+}
+@media all and (max-width: 640px) {
   .mob-1 {
     width: 8.33333%;
   }
@@ -1362,6 +1362,10 @@ caption {
   [dir=rtl] .mob-clear {
     clear: right;
   }
+
+  .mob-unclear {
+    clear: none;
+  }
 }
 .actions li {
   margin-right: 20px;
@@ -1384,14 +1388,15 @@ caption {
   padding-bottom: 11px;
   padding-bottom: 1.1rem;
   margin: 0;
-  background: #eadbcd;
+  background: #99ccff;
   text-decoration: none;
 }
 .action-button, .action-button:visited {
   color: #333333;
 }
 .action-button:hover {
-  background-color: #99ccff;
+  background-color: #4781ba;
+  color: #fffaf5;
 }
 
 .forkme {
