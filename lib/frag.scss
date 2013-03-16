@@ -129,8 +129,10 @@ $frag-oldie-support: true !default;
     padding-right: 0;
 
     // Re-add padding for Old IE. Sorry.
-    *padding-left: $frag-gutter-width;
-    *padding-right: $frag-gutter-width;
+    @if $frag-oldie-support {
+        *padding-left: $frag-gutter-width;
+        *padding-right: $frag-gutter-width;
+    }
 }
 
 /* Grid: Base columns */
