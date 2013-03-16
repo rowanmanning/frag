@@ -127,6 +127,10 @@ $frag-oldie-support: true !default;
 .col-degutter {
     padding-left: 0;
     padding-right: 0;
+
+    // Re-add padding for Old IE. Sorry.
+    *padding-left: $frag-gutter-width;
+    *padding-right: $frag-gutter-width;
 }
 
 /* Grid: Base columns */
