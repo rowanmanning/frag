@@ -51,7 +51,7 @@ Copyright 2013, Rowan Manning
 Licensed under the [MIT][mit] license.
 
 
-[docs]: http://frag.rowanmanning.com/
+[docs]: http://fragcss.com/
 [1x]: https://github.com/rowanmanning/frag/tree/1.x
 [component]: https://github.com/component/component
 [make]: http://gnuwin32.sourceforge.net/packages/make.htm
