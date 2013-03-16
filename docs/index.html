@@ -117,6 +117,25 @@ layout: page
     </div>
 
     <p>
+        Clearing doesn't work particularly well in older versions of Internet
+        Explorer. Sometimes this looks acceptable, sometimes it doesn't. If
+        you're desperate to fix this, then you may use the
+        <code>oldie-clear</code> class. The caveat here is that it must be
+        applied to a new element rather than one of your existing columns. It's
+        kinda gross.
+    </p>
+
+    <div class="css-example">
+        {% highlight html %}<div class="grid">
+    <div class="col col-6">           <!-- content --> </div>
+    <div class="col col-6">           <!-- content --> </div>
+    <br class="oldie-clear"/>
+    <div class="col col-6 col-clear"> <!-- content --> </div>
+    <div class="col col-6">           <!-- content --> </div>
+</div>{% endhighlight %}
+    </div>
+
+    <p>
         <b>Note:</b> If you know your columns have equal heights (e.g. they
         contain fixed height images only) then you can omit the
         <code>dsk-clear</code> class.
