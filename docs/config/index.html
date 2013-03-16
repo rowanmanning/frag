@@ -1,0 +1,84 @@
+---
+title: Configuration - Frag Documentation
+description: Outline of Frag's variables and how you can customise the grid to suit your needs.
+layout: page
+---
+
+<h1>Configuration</h1>
+
+<p>
+    For Sass users, Frag can be customised and configured by altering core
+    variables. These variables should be set <em>before</em> you import Frag.
+    E.g:
+</p>
+
+{% highlight scss %}
+$frag-column-count: 12;
+@import "vendor/frag/lib/frag";
+{% endhighlight %}
+
+
+<div id="configurations" class="section typearea">
+    <h2>Available Configurations</h2>
+
+    <table class="table table-is-wide table-is-striped smallprint">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Default</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>$frag-max-width</td>
+                <td>The maximum width a grid should stretch to (px)</td>
+                <td>1200px</td>
+            </tr>
+
+            <tr>
+                <td>$frag-oldie-width</td>
+                <td>The fixed width of the grid in IE 6–7 (px)</td>
+                <td>980px</td>
+            </tr>
+
+            <tr>
+                <td>$frag-break-tablet</td>
+                <td>The screen width at which the grid switches to tablet format (px)</td>
+                <td>1000px</td>
+            </tr>
+
+            <tr>
+                <td>$frag-break-mobile</td>
+                <td>The screen width at which the grid switches to mobile format (px)</td>
+                <td>640px</td>
+            </tr>
+
+            <tr>
+                <td>$frag-column-count</td>
+                <td>The number of columns the grid has (num)</td>
+                <td>12</td>
+            </tr>
+
+            <tr>
+                <td>$frag-gutter-width</td>
+                <td>
+                    The width of column gutters (px).<br/>
+                    This is set either side of each column
+                </td>
+                <td>20px</td>
+            </tr>
+
+            <tr>
+                <td>$frag-oldie-support</td>
+                <td>
+                    Whether to output styles for IE 6–7 (bool).<br/>
+                    If you don't need to support IE 6–7, this reduces output</td>
+                <td>true</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
