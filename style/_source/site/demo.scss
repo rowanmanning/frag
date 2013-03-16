@@ -1,0 +1,26 @@
+
+// Demo page styles
+.demo {
+    text-align: center;
+    padding-left: $gutter;
+    padding-right: $gutter;
+
+    // Demo grid styles
+    .grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .col {
+        @extend %noisy;
+        @include rem("padding-top", $pigeon-type-line-height);
+        @include rem("padding-bottom", $pigeon-type-line-height);
+        background-color: $c-cream-md;
+        border-top: 5px solid $c-blue;
+    }
+    .padless-bottom {
+        padding-bottom: 0;
+    }
+    .col.alt {
+        background-color: $c-cream-dk;
+    }
+}

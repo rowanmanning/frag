@@ -1,0 +1,157 @@
+---
+title: Frag Grid Demo
+description: A demonstration of many of Frag's features.
+layout: demo
+---
+
+<h1>Frag Grid Demo</h1>
+<p>
+    This is a demo page for Frag, a fluid, responsive, simple grid system for CSS<br/>
+    Return to the <a href="/">main site</a> for <a href="/docs/">documentation</a>.
+</p>
+
+
+<div id="basic" class="section typearea">
+    <h2><a href="#basic" class="shh-a">Basic Columns</a></h2>
+
+    <p>
+        A simple responsive grid is easy to achieve (try resizing the window).<br/>
+        <a href="/docs/">View documentation</a>.
+    </p>
+    
+    <div class="space grid">
+        <div class="col dsk-3">01</div>
+        <div class="col dsk-3 alt">02</div>
+        <div class="col dsk-3">03</div>
+        <div class="col dsk-3 alt">04</div>
+    </div>
+
+    <div class="space grid">
+        <div class="col dsk-2 tab-4 mob-6">01</div>
+        <div class="col dsk-2 tab-4 mob-6 alt">02</div>
+        <div class="col dsk-2 tab-4 mob-6">03</div>
+        <div class="col dsk-2 tab-4 mob-6 alt">04</div>
+        <div class="col dsk-2 tab-4 mob-6">05</div>
+        <div class="col dsk-2 tab-4 mob-6 alt">06</div>
+    </div>
+
+    <div class="space grid">
+        <div class="col dsk-3 tab-6 mob-12">01</div>
+        <div class="col dsk-3 tab-6 mob-12 alt">02</div>
+        <div class="col dsk-3 tab-6 mob-12">03</div>
+        <div class="col dsk-3 tab-6 mob-12 alt">04</div>
+    </div>
+
+    <p>
+        Frag also supports right-to-left columns.
+    </p>
+
+    <div class="space grid" dir="rtl">
+        <div class="col dsk-3">01</div>
+        <div class="col dsk-3 alt">02</div>
+        <div class="col dsk-3">03</div>
+        <div class="col dsk-3 alt">04</div>
+    </div>
+
+</div>
+
+
+<div id="unequal-heights" class="section typearea">
+    <h2><a href="#unequal-heights" class="shh-a">Unequal Heights</a></h2>
+
+    <p>
+        Unequal columns heights are no problem.<br/>
+        <a href="/docs/#clearing">View column clearing documentation</a>.
+    </p>
+    
+    <div class="space grid">
+        <div class="col dsk-3 tab-3 mob-6">01<br/>&hellip;</div>
+        <div class="col dsk-3 tab-3 mob-6 alt">02<br/>&hellip;<br/>&hellip;</div>
+        <div class="col dsk-3 tab-3 mob-6 mob-clear">03<br/>&hellip;<br/>&hellip;<br/>&hellip;</div>
+        <div class="col dsk-3 tab-3 mob-6 alt">04</div>
+        <div class="col dsk-3 tab-3 mob-6 dsk-clear mob-clear">05</div>
+        <div class="col dsk-3 tab-3 mob-6 alt">06<br/>&hellip;<br/>&hellip;</div>
+        <div class="col dsk-3 tab-3 mob-6 mob-clear">07<br/>&hellip;</div>
+        <div class="col dsk-3 tab-3 mob-6 alt">08<br/>&hellip;<br/>&hellip;<br/>&hellip;<br/>&hellip;</div>
+    </div>
+
+</div>
+
+
+<div id="nesting" class="section typearea">
+    <h2><a href="#nesting" class="shh-a">Nested Grids</a></h2>
+
+    <p>
+        Grids can be nested easily in modern browsers.<br/>
+        In IE 6–7 all nested columns span the full width of their parent.<br/>
+        <a href="/docs/#nesting">View nested grid documentation</a>.
+    </p>
+    
+    <div class="grid">
+        <div class="col dsk-6 mob-12 col-degutter padless-bottom">
+            01<br/><br/>
+            <div class="grid">
+                <div class="col dsk-12 col-degutter alt padless-bottom">
+                    01<br/><br/>
+                    <div class="grid">
+                        <div class="col dsk-3">01</div>
+                        <div class="col dsk-3">02</div>
+                        <div class="col dsk-3">03</div>
+                        <div class="col dsk-3">04</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col dsk-6 mob-12 col-degutter alt padless-bottom">
+            01<br/><br/>
+            <div class="grid">
+                <div class="col dsk-6">01</div>
+                <div class="col dsk-6">02</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="hiding" class="section typearea">
+    <h2><a href="#hiding" class="shh-a">Hiding Columns</a></h2>
+
+    <p>
+        Individual columns can be hidden/shown at different breakpoints.<br/>
+        <a href="/docs/#hiding">View hiding columns documentation</a>.
+    </p>
+    
+    <div class="grid">
+        <div class="col dsk-12">
+            Visible at all screen sizes
+        </div>
+        <div class="col dsk-12 mob-show tab-hide dsk-hide">
+            Visible at mobile size only
+        </div>
+        <div class="col dsk-12 mob-hide tab-show dsk-hide">
+            Visible at tablet size only
+        </div>
+        <div class="col dsk-12 mob-hide tab-hide dsk-show">
+            Visible at desktop size only
+        </div>
+        <div class="col dsk-12 mob-show tab-show dsk-hide">
+            Visible at mobile and tablet sizes only
+        </div>
+        <div class="col dsk-12 mob-hide tab-show dsk-show">
+            Visible at tablet and desktop sizes only
+        </div>
+    </div>
+
+</div>
+
+
+<div class="section typearea">
+    <h2>Find Out More</h2>
+
+    <p>
+        You can find out more about Frag on the <a href="/">main site</a>
+        or by reading the <a href="/docs/">documentation</a>.
+    </p>
+
+</div>

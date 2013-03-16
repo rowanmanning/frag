@@ -1459,7 +1459,7 @@ caption {
   }
 }
 
-.noisy, .swatch, html, body:before, .wrapper:before {
+.noisy, .swatch, .demo .col, html, body:before, .wrapper:before {
   background-image: url("assets/100-65-5.png");
 }
 
@@ -1554,6 +1554,30 @@ pre code {
 }
 .highlight .scss .c {
   color: #4781ba;
+}
+
+.demo {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.demo .grid {
+  margin-left: auto;
+  margin-right: auto;
+}
+.demo .col {
+  padding-top: 22px;
+  padding-top: 2.2rem;
+  padding-bottom: 22px;
+  padding-bottom: 2.2rem;
+  background-color: #f9eee4;
+  border-top: 5px solid #99ccff;
+}
+.demo .padless-bottom {
+  padding-bottom: 0;
+}
+.demo .col.alt {
+  background-color: #eadbcd;
 }
 
 .footer {
