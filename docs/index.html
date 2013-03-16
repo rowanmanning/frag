@@ -6,6 +6,10 @@ layout: page
 
 <h1>Documentation</h1>
 
+<p>
+    API documentation for all of Frag's classes, and how to use the grid.
+</p>
+
 
 <div id="grid" class="section typearea">
     <h2><a href="#grid" class="shh-a">Grid</a></h2>
@@ -165,6 +169,81 @@ layout: page
     <div class="col dsk-6 tab-4 tab-clear"></div>
     <div class="col dsk-6 dsk-clear tab-4 tab-unclear"></div>
     <div class="col dsk-6 tab-4"></div>
+</div>{% endhighlight %}
+    </div>
+
+</div>
+
+
+<div id="nesting" class="section typearea">
+    <h2><a href="#nesting" class="shh-a">Nested Grids</a></h2>
+
+    <p>
+        If you need to nest grids (you probably will) then that's fine, it works
+        exactly as you'd expect it to. The only caveat here is that nested grids
+        work differently in IE 6–7: all nested grid columns become full-width
+        columns.
+    </p>
+
+    <p>
+        The markup for grid nesting is as you'd expect:
+    </p>
+
+    <div class="css-example">
+        {% highlight html %}<div class="grid">
+    <div class="col dsk-6">
+        <div class="grid">
+            <div class="col dsk-6"> <!-- content --> </div>
+            <div class="col dsk-6"> <!-- content --> </div>
+        </div>
+    </div>
+    <div class="col dsk-6">
+        <!-- content -->
+    </div>
+</div>{% endhighlight %}
+    </div>
+
+</div>
+
+
+<div id="hiding" class="section typearea">
+    <h2><a href="#hiding" class="shh-a">Hiding Columns</a></h2>
+
+    <p>
+        Frag allows you to hide certain columns based on the break-point. This
+        can be useful if a particular column is not valuable or gets in the way
+        for mobile or tablet users, e.g. Advertisements.
+    </p>
+
+    <p>
+        The classes <code>dsk-hide</code>, <code>tab-hide</code> and
+        <code>mob-hide</code> hide columns. However, like clearing, these impact
+        on subsequent break-points. So if a column is hidden at tablet size, it
+        will also be hidden at mobile size. You can explicitly <em>show</em> a
+        column again with the classes <code>dsk-show</code>,
+        <code>tab-show</code> and <code>mob-show</code>
+    </p>
+
+    <div class="css-example">
+        {% highlight html %}<div class="grid">
+    <div>
+        Visible at all screen sizes
+    </div>
+    <div class="dsk-hide tab-hide mob-show">
+        Visible at mobile size only
+    </div>
+    <div class="dsk-hide tab-show mob-hide">
+        Visible at tablet size only
+    </div>
+    <div class="dsk-show tab-hide mob-hide">
+        Visible at desktop size only
+    </div>
+    <div class="dsk-hide tab-show mob-show">
+        Visible at mobile and tablet sizes only
+    </div>
+    <div class="dsk-show tab-show mob-hide">
+        Visible at tablet and desktop sizes only
+    </div>
 </div>{% endhighlight %}
     </div>
 
