@@ -19,7 +19,7 @@ tld: fragcss.com
 repo:
   url: https://github.com/rowanmanning/frag
   raw: https://raw.github.com/rowanmanning/frag
-  branch: 2.x
+  branch: master
 
 # Author details
 author:
