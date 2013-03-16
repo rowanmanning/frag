@@ -1505,6 +1505,14 @@ caption {
   background-color: #4781ba;
 }
 
+.sw5 {
+  background-color: #f2b865;
+}
+
+.sw6 {
+  background-color: #c78b35;
+}
+
 pre, code {
   font-family: Consolas, "Lucida Console", Monaco, monospace;
 }
@@ -1537,14 +1545,14 @@ pre code {
   color: #99ccff;
 }
 .highlight .html .s {
-  color: #f00;
+  color: #f2b865;
 }
 
 .highlight .scss .na, .highlight .scss .k {
   color: #99ccff;
 }
 .highlight .scss .s, .highlight .scss .s2, .highlight .scss .mi, .highlight .scss .kt {
-  color: #f00;
+  color: #f2b865;
 }
 
 .footer {

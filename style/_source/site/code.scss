@@ -32,7 +32,7 @@ pre code {
         color: $c-blue;
     }
     .s {
-        color: #f00;
+        color: $c-orange;
     }
 }
 
@@ -42,6 +42,6 @@ pre code {
         color: $c-blue;
     }
     .s, .s2, .mi, .kt {
-        color: #f00;
+        color: $c-orange;
     }
 }
