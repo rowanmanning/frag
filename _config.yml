@@ -12,8 +12,8 @@ server: true
 
 # Site details
 lang: en-GB
-host: frag.rowanmanning.com
-tld: rowanmanning.com
+host: fragcss.com
+tld: fragcss.com
 
 # Repo details
 repo:
