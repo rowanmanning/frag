@@ -140,6 +140,12 @@
   clear: none;
 }
 
+.oldie-clear {
+  display: none;
+  *display: block;
+  *clear: both;
+}
+
 @media all and (max-width: 1000px) {
   .tab-1 {
     width: 8.33333%;

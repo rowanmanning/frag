@@ -79,6 +79,15 @@ $frag-oldie-support: true !default;
         clear: none;
     }
 
+    // Old-IE column clearing
+    @if $oldie {
+        .oldie-clear {
+            display: none;
+            *display: block;
+            *clear: both;
+        }
+    }
+
 }
 
 /* Grid: Base styles */
