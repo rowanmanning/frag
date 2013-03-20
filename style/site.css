@@ -1564,6 +1564,10 @@ pre code {
   color: #4781ba;
 }
 
+.highlight .sh .nv {
+  color: #4781ba;
+}
+
 .demo {
   text-align: center;
   padding-left: 20px;
