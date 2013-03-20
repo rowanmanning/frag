@@ -26,7 +26,7 @@ $frag-oldie-support: true !default;
 
 
 /* Util: Box for grid/column display */
-%frag-box {
+.frag-box {
     display: block;
     -webkit-box-sizing: border-box; // Safari 3.1–5.0
     -moz-box-sizing: border-box; // Firefox 2+
@@ -34,7 +34,7 @@ $frag-oldie-support: true !default;
 }
 
 /* Util: Clearfix */
-%frag-clearfix {
+.frag-clearfix {
     *zoom: 1;
     &:before, &:after {
         display: table;
@@ -92,8 +92,8 @@ $frag-oldie-support: true !default;
 
 /* Grid: Base styles */
 .grid {
-    @extend %frag-box;
-    @extend %frag-clearfix;
+    @extend .frag-box;
+    @extend .frag-clearfix;
     width: auto;
     max-width: $frag-max-width;
     
@@ -114,7 +114,7 @@ $frag-oldie-support: true !default;
 
 /* Grid: Column styles */
 .col {
-    @extend %frag-box;
+    @extend .frag-box;
     float: left;
     padding-left: $frag-gutter-width;
     padding-right: $frag-gutter-width;

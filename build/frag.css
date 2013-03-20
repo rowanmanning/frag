@@ -9,7 +9,7 @@
  *
  */
 /* Util: Box for grid/column display */
-.grid, .col {
+.frag-box, .grid, .col {
   display: block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -17,14 +17,14 @@
 }
 
 /* Util: Clearfix */
-.grid {
+.frag-clearfix, .grid {
   *zoom: 1;
 }
-.grid:before, .grid:after {
+.frag-clearfix:before, .grid:before, .frag-clearfix:after, .grid:after {
   display: table;
   content: '';
 }
-.grid:after {
+.frag-clearfix:after, .grid:after {
   clear: both;
 }
 
