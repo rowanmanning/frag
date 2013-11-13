@@ -1,0 +1,11 @@
+{
+    "name": "frag",
+    "version": "2.1.1",
+    "private": true,
+
+    "devDependencies": {
+        "grunt": "~0.4",
+        "grunt-contrib-sass": "~0.5",
+        "grunt-contrib-watch": "~0.5"
+    }
+}
