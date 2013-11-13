@@ -1,0 +1,24 @@
+
+@import "frag-cols";
+
+// Output CSS for a breakpoint
+@mixin frag-breakpoint ($def) {
+
+    // Get definition properties
+    $name: nth($def, 1);
+    $type: nth($def, 2);
+    $width: nth($def, 3);
+    $cols: nth($def, 4);
+    $gutter: nth($def, 5);
+    $prefix: "#{$name}-";
+
+    // Include columns
+    @if $type == none {
+        @include frag-cols($prefix, $cols, $gutter);
+    } @else {
+        @media all and ($type: $width) {
+            @include frag-cols($prefix, $cols, $gutter);
+        }
+    }
+
+}

@@ -8,118 +8,85 @@
  * Licensed under the MIT license.
  *
  */
-/* Util: Box for grid/column display */
-.frag-box, .grid, .col {
+.grid, .col {
   display: block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* Util: Clearfix */
-.frag-clearfix, .grid {
-  *zoom: 1;
-}
-.frag-clearfix:before, .grid:before, .frag-clearfix:after, .grid:after {
-  display: table;
-  content: '';
-}
-.frag-clearfix:after, .grid:after {
-  clear: both;
-}
-
-/* Grid: Base styles */
 .grid {
   width: auto;
   max-width: 1200px;
-  *width: 980px;
 }
-.grid .grid {
-  *width: auto;
-}
-.grid .grid .col {
-  *width: auto;
-  *float: none;
+.grid:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
-/* Grid: Column styles */
 .col {
   float: left;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 [dir=rtl] .col {
   float: right;
 }
 
-/* Grid: Remove column gutter */
 .col-degutter {
-  padding-left: 0;
-  padding-right: 0;
-  *padding-left: 20px;
-  *padding-right: 20px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
-/* Grid: Base columns */
+.col {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .dsk-1 {
   width: 8.33333%;
-  *width: 41px;
 }
 
 .dsk-2 {
   width: 16.66667%;
-  *width: 122px;
 }
 
 .dsk-3 {
   width: 25%;
-  *width: 203px;
 }
 
 .dsk-4 {
   width: 33.33333%;
-  *width: 284px;
 }
 
 .dsk-5 {
   width: 41.66667%;
-  *width: 365px;
 }
 
 .dsk-6 {
   width: 50%;
-  *width: 446px;
 }
 
 .dsk-7 {
   width: 58.33333%;
-  *width: 527px;
 }
 
 .dsk-8 {
   width: 66.66667%;
-  *width: 608px;
 }
 
 .dsk-9 {
   width: 75%;
-  *width: 689px;
 }
 
 .dsk-10 {
   width: 83.33333%;
-  *width: 770px;
 }
 
 .dsk-11 {
   width: 91.66667%;
-  *width: 851px;
 }
 
 .dsk-12 {
   width: 100%;
-  *width: 932px;
 }
 
 .dsk-hide {
@@ -142,13 +109,12 @@
   clear: none;
 }
 
-.oldie-clear {
-  display: none;
-  *display: block;
-  *clear: both;
-}
-
 @media all and (max-width: 1000px) {
+  .col {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .tab-1 {
     width: 8.33333%;
   }
@@ -218,6 +184,11 @@
   }
 }
 @media all and (max-width: 640px) {
+  .col {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .mob-1 {
     width: 8.33333%;
   }

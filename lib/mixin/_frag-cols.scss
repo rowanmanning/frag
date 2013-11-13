@@ -1,0 +1,37 @@
+
+// Output column classes
+@mixin frag-cols ($prefix, $cols, $gutter) {
+
+    // Gutters
+    .col {
+        padding-left: $gutter;
+        padding-right: $gutter;
+    }
+
+    // Column widths
+    @for $i from 1 through $cols {
+        .#{$prefix}#{$i} {
+            width: (100% / $cols) * $i;
+        }
+    }
+
+    // Column hiding
+    .#{$prefix}hide {
+        display: none;
+    }
+    .#{$prefix}show {
+        display: block;
+    }
+
+    // Column clearing
+    .#{$prefix}clear {
+        clear: left;
+    }
+    [dir=rtl] .#{$prefix}clear {
+        clear: right;
+    }
+    .#{$prefix}unclear {
+        clear: none;
+    }
+
+}
