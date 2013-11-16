@@ -8,7 +8,8 @@ module.exports = function (grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'build/frag.css': 'lib/frag.scss'
+                    'build/frag.css': 'lib/frag.scss',
+                    'build/frag-dtf.css': 'lib/frag-dtf.scss'
                 }
             },
             compressed: {
@@ -16,7 +17,8 @@ module.exports = function (grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'build/frag.min.css': 'lib/frag.scss'
+                    'build/frag.min.css': 'lib/frag.scss',
+                    'build/frag-dtf.min.css': 'lib/frag-dtf.scss'
                 }
             }
         },

@@ -1,0 +1,41 @@
+
+@import "../mixin/frag-breakpoint";
+
+// Grid/column base styles
+.grid, .col {
+    display: block;
+    -moz-box-sizing: border-box; // needed for older Firefox
+    -webkit-box-sizing: border-box; // still needed for older iOS/Android versions
+    box-sizing: border-box;
+}
+
+// Grid container
+.grid {
+    width: auto;
+    max-width: $frag-max-width;
+
+    &:after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+// Grid column
+.col {
+    float: left;
+}
+[dir=rtl] .col {
+    float: right;
+}
+
+// Remove gutters from a column
+.col-degutter {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+// Generate CSS for breakpoints
+@each $breakpoint in $frag-breakpoints {
+    @include frag-breakpoint($breakpoint);
+}

@@ -1,0 +1,10 @@
+/*!
+ * Frag 2.1.1 (Desktop-First)
+ *
+ * Frag is a fluid, responsive, simple grid system for
+ * CSS written in Sass. http://fragcss.com/
+ *
+ * Copyright 2013, Rowan Manning.
+ * Licensed under the MIT license.
+ *
+ */.grid,.col{display:block;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.grid{width:auto;max-width:1200px}.grid:after{content:'';display:table;clear:both}.col{float:left}[dir=rtl] .col{float:right}.col-degutter{padding-left:0 !important;padding-right:0 !important}.col{padding-left:20px;padding-right:20px}.dsk-1{width:8.33333%}.dsk-2{width:16.66667%}.dsk-3{width:25%}.dsk-4{width:33.33333%}.dsk-5{width:41.66667%}.dsk-6{width:50%}.dsk-7{width:58.33333%}.dsk-8{width:66.66667%}.dsk-9{width:75%}.dsk-10{width:83.33333%}.dsk-11{width:91.66667%}.dsk-12{width:100%}.dsk-hide{display:none}.dsk-show{display:block}.dsk-clear{clear:left}[dir=rtl] .dsk-clear{clear:right}.dsk-unclear{clear:none}@media all and (max-width: 1000px){.col{padding-left:20px;padding-right:20px}.tab-1{width:8.33333%}.tab-2{width:16.66667%}.tab-3{width:25%}.tab-4{width:33.33333%}.tab-5{width:41.66667%}.tab-6{width:50%}.tab-7{width:58.33333%}.tab-8{width:66.66667%}.tab-9{width:75%}.tab-10{width:83.33333%}.tab-11{width:91.66667%}.tab-12{width:100%}.tab-hide{display:none}.tab-show{display:block}.tab-clear{clear:left}[dir=rtl] .tab-clear{clear:right}.tab-unclear{clear:none}}@media all and (max-width: 640px){.col{padding-left:20px;padding-right:20px}.mob-1{width:8.33333%}.mob-2{width:16.66667%}.mob-3{width:25%}.mob-4{width:33.33333%}.mob-5{width:41.66667%}.mob-6{width:50%}.mob-7{width:58.33333%}.mob-8{width:66.66667%}.mob-9{width:75%}.mob-10{width:83.33333%}.mob-11{width:91.66667%}.mob-12{width:100%}.mob-hide{display:none}.mob-show{display:block}.mob-clear{clear:left}[dir=rtl] .mob-clear{clear:right}.mob-unclear{clear:none}}

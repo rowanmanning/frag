@@ -1,5 +1,5 @@
 /*!
- * Frag 2.1.1
+ * Frag 2.1.1 (Desktop-First)
  *
  * Frag is a fluid, responsive, simple grid system for
  * CSS written in Sass. http://fragcss.com/
@@ -15,9 +15,9 @@ $frag-max-width: 1200px !default;
 // Breakpoint definitions
 // (name, type, width, columns, gutter)
 $frag-breakpoints: (
-    mob  none       none    12  20px,
-    tab  min-width  640px   12  20px,
-    dsk  min-width  1000px  12  20px
+    dsk  none       none    12  20px,
+    tab  max-width  1000px  12  20px,
+    mob  max-width  640px   12  20px
 ) !default;
 
 // Load the grid
