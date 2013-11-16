@@ -27,6 +27,8 @@ $frag-breakpoints: (
 // Grid/column base styles
 .grid, .col {
     display: block;
+    -moz-box-sizing: border-box; // needed for older Firefox
+    -webkit-box-sizing: border-box; // still needed for older iOS/Android versions
     box-sizing: border-box;
 }
 
