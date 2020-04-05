@@ -12,8 +12,8 @@ server: true
 
 # Site details
 lang: en-GB
-host: fragcss.com
-tld: fragcss.com
+host: rowanmanning.github.io/frag
+tld: rowanmanning.github.io
 
 # Repo details
 repo:
