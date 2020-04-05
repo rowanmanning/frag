@@ -4,6 +4,8 @@ Frag
 
 Frag is a fluid, responsive, simple grid system for CSS written in Sass.
 
+**⚠️ NOTE: This project is no longer being maintained. If you're interested in taking over maintenance, please contact me.**
+
 **Current Version:** *2.1.1*  
 **Full Support:** *Android Browser 2.2–4.2, Firefox 3.6, Firefox 4–19, Google Chrome 14–25, Internet Explorer 8–10, Mobile Safari iOS 3–6, Opera 12.10, Safari 5–6*  
 **Degraded Support:** *Internet Explorer 6–7 (fixed width grid and lose a little functionality, but content is still presentable)*
@@ -58,12 +60,12 @@ Licensed under the [MIT][mit] license.
 
 
 [1x]: https://github.com/rowanmanning/frag/tree/1.x
-[frag]: http://fragcss.com/
-[frag-install]: http://fragcss.com/docs/install/
-[frag-config]: http://fragcss.com/docs/config/
-[frag-docs]: http://fragcss.com/docs/
-[frag-demo]: http://fragcss.com/demo/
-[logo]: http://fragcss.com/media/logo.png
+[frag]: https://rowanmanning.github.io/frag/
+[frag-install]: https://rowanmanning.github.io/frag/docs/install/
+[frag-config]: https://rowanmanning.github.io/frag/docs/config/
+[frag-docs]: https://rowanmanning.github.io/frag/docs/
+[frag-demo]: https://rowanmanning.github.io/frag/demo/
+[logo]: https://rowanmanning.github.io/frag/media/logo.png
 [make]: http://gnuwin32.sourceforge.net/packages/make.htm
 [mit]: http://opensource.org/licenses/mit-license.php
 [sass]: http://sass-lang.com/download.html
